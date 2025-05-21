@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "lime_footer_aPqwC7": {
+      "type": "lime-footer",
+      "settings": {
+        "menu_link1": "account",
+        "menu_link2": "account"
+      }
+    },
+    "footer_sec_xFCW3C": {
+      "type": "Footer-sec",
+      "disabled": true,
+      "settings": {
+        "store_image1": "shopify://shop_images/google_paly.png",
+        "store_image2": "shopify://shop_images/appel_store.svg",
+        "app_link_1": "",
+        "app_link_2": "",
+        "popular_categories_heading": "Popular Categories",
+        "shop_heading": "Shop",
+        "sale_heading": "Shoes on Sale",
+        "company_heading": "Company",
+        "information_heading": "Information",
+        "account_heading": "Account",
+        "contact_heading": "",
+        "menu1": "papular-category",
+        "menu2": "shoes-on-sale",
+        "menu3": "company",
+        "menu4": "information",
+        "menu5": "account",
+        "menu6": "brands",
+        "menu7": "footer",
+        "about_us_heading": "About Us",
+        "about_us_description": "",
+        "company_name": "Dodos Shoes (Pty) Ltd",
+        "payment_image": "shopify://shop_images/SB_Pay_Logos_SVG.svg"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "lime_footer_aPqwC7",
+    "footer_sec_xFCW3C",
+    "footer"
+  ]
+}

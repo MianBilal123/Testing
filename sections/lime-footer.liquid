@@ -1,0 +1,327 @@
+<style>
+      footer.footer.color-background-1.gradient {
+        margin-top: 4rem;
+    }
+                .footer {
+                    background: #FAFAFA;
+                }
+                  .footer {
+                    border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+                }
+
+                  .footer .footer__content-top {
+                    width: 60%;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                  .footer__content-top {
+                    padding-bottom: 5rem;
+                    padding-top: 3rem;
+                    display: block;
+                }
+
+                  page-width {
+                    max-width: var(--page-width);
+                    margin: 0 auto;
+                    padding: 0 1.5rem;
+                }
+                  .grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 2rem;
+                    margin-left: -.5rem;
+                    padding: 0;
+                    list-style: none;
+                  }
+              .footer-block--newsletter {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-items: flex-end;
+                  margin-top: 4rem;
+              }
+                .footer__list-social.list-social:only-child {
+                  justify-content: center;
+              }
+                .list-social {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-end;
+              }
+
+              footer-block--newsletter > * {
+                  flex: 1 1 100%;
+              }
+
+                .list-unstyled {
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
+              }
+
+                .footer__blocks-wrapper .footer-block {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-transform: uppercase;
+              }
+                .footer__blocks-wrapper .grid__item {
+                  padding-bottom: 0;
+              }
+                /* .grid--1-col .grid__item {
+                  max-width: 100%;
+                  width: 100%;
+              } */
+
+                /* .grid--2-col .grid__item {
+                  width: calc(50% - .25rem);
+              } */
+            a.link.link--text.list-menu__item.list-menu__item--link {
+                text-decoration: none;
+            }
+
+          h2.footer-block__heading {
+              font-size: 18px;
+              font-weight: 900;
+            margin-bottom:15px;
+          }
+
+
+            a.link.link--text.list-menu__item.list-menu__item--link {
+              text-decoration: none;
+              margin-bottom: 10px;
+          }
+        ul.footer__list-social.list-unstyled.list-social {
+            gap: 20px;
+        }
+          img.insta {
+            width: 31px;
+        }
+
+
+      .footer__content-bottom {
+          border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
+          padding-top: 3rem;
+          padding-bottom: 1rem;
+      }
+
+      .footer__content-bottom-wrapper {
+          display: flex;
+          width: 100%;
+      }
+        .footer__localization:empty {
+          display: none;
+      }
+
+        .footer__localization:empty + .footer__column--info {
+          align-items: center;
+      }
+        .footer__column--info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 2rem;
+          padding-right: 2rem;
+      }
+        .footer__column {
+          width: 100%;
+          align-items: flex-end;
+      }
+        .footer__payment {
+          text-align: center;
+      }
+
+       .payment-methods-head {
+          font-weight: bold;
+          display: inline-block;
+          padding-bottom: 7px;
+      }
+
+      .list-payment {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: -0.5rem 0;
+          padding-top: 1rem;
+          padding-left: 0;
+      }
+
+        .list-payment__item {
+          align-items: center;
+          display: flex;
+          padding: 0.5rem;
+      }
+        .footer__copyright {
+          text-align: center;
+          margin-top: 0.5rem;
+      }
+        .copyright__content {
+          font-size: 13px;
+      }
+      .copyright__content a {
+          color: currentColor;
+          text-decoration: none;
+      }
+  .footer .footer__content-top {
+    width:100%
+  }
+
+
+                }
+</style>
+<footer class="footer color-background-1 gradient">
+  <div class="footer__content-top page-width">
+    <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet ">
+      <div class="footer-block grid__item footer-block--menu">
+        <div class="footer-block_inner">
+          <h2 class="footer-block__heading">Customer Care</h2>
+          <ul class="footer-block__details-content list-unstyled">
+            {% for link in section.settings.menu_link1.links %}
+              <li>
+                <a class="link link--text list-menu__item list-menu__item--link" href="{{ link.url }}">
+                  {{- link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-block grid__item footer-block--menu">
+        <div class="footer-block_inner">
+          <h2 class="footer-block__heading">Information</h2>
+          <ul class="footer-block__details-content list-unstyled">
+            {% for link in section.settings.menu_link2.links %}
+              <li>
+                <a class="link link--text list-menu__item list-menu__item--link" href="{{ link.url }}">
+                  {{- link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-block--newsletter">
+      <ul class="footer__list-social list-unstyled list-social" role="list">
+        <li class="list-social__item">
+          <a href="https://www.facebook.com/limelight.pret/" class="link link--text list-social__link">
+            <svg width="30" height="30" viewBox="0 0 61 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M57.6329 0.574707H3.36433C1.50601 0.575638 -0.000465285 2.08305 1.07801e-07 3.94183V58.2104C0.000930894 60.0687 1.50834 61.5752 3.36712 61.5747H57.6329C59.4921 61.5752 60.9995 60.0682 61 58.209C61 58.2085 61 58.2081 61 58.2076V3.93903C60.9991 2.08072 59.4917 0.574242 57.6329 0.574707Z" fill="#4267B2"></path>
+              <path d="M42.541 61.5747V37.8881H50.5333L51.7306 28.6168H42.541V22.712C42.541 20.0339 43.2851 18.2091 47.1288 18.2091H52V9.9392C51.1525 9.82658 48.2448 9.57471 44.8613 9.57471C37.797 9.57471 32.9623 13.8814 32.9623 21.7937V28.6168H25V37.8881H32.9623V61.5747H42.541Z" fill="white"></path>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="list-social__item insta-social_link">
+          <a class="insta" href="https://www.instagram.com/limelight.pret/" class="link link--text list-social__link"
+            ><img
+              class="insta"
+              loading="lazy"
+              src="https://cdn.shopify.com/s/files/1/0015/2829/9567/files/insta.png?v=1633504162"
+              alt="limelight Instagram"
+              width="auto"
+              height="auto"
+            >
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="list-social__item">
+          <a href="https://www.youtube.com/limelightofficial" class="link link--text list-social__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 62 43" fill="none">
+              <path d="M60.743 6.95998C60.0396 4.346 57.9787 2.28555 55.3652 1.58166C50.5902 0.274902 31.4902 0.274902 31.4902 0.274902C31.4902 0.274902 12.3908 0.274902 7.61578 1.53185C5.05254 2.23527 2.94135 4.34647 2.23792 6.95998C0.981445 11.7345 0.981445 21.6364 0.981445 21.6364C0.981445 21.6364 0.981445 31.5882 2.23792 36.3129C2.94181 38.9264 5.00227 40.9873 7.61624 41.6912C12.441 42.998 31.4907 42.998 31.4907 42.998C31.4907 42.998 50.5902 42.998 55.3652 41.741C57.9792 41.0376 60.0396 38.9767 60.7435 36.3632C62 31.5882 62 21.6867 62 21.6867C62 21.6867 62.0503 11.7345 60.743 6.95998Z" fill="#FF0000"></path>
+              <path d="M25.4092 30.7843L41.2919 21.6366L25.4092 12.4888V30.7843Z" fill="white"></path>
+            </svg>
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__content-bottom">
+    <div class="footer__content-bottom-wrapper page-width">
+      <div class="footer__column footer__localization"></div>
+      <div class="footer__column footer__column--info">
+        <div class="footer__payment">
+          <span class="payment-methods-head">We Accept</span>
+          <ul class="list list-payment" role="list">
+            <li class="list-payment__item"></li>
+
+            <li class="list-payment__item"></li>
+
+            <li class="list-payment__item">
+              <svg
+                class="icon icon--full-color"
+                viewBox="0 0 38 24"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                width="38"
+                height="24"
+                aria-labelledby="pi-visa"
+              >
+                <title id="pi-visa">Visa</title>
+                <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path>
+              </svg>
+            </li>
+
+            <li class="list-payment__item">
+              <svg
+                class="icon icon--full-color"
+                viewBox="0 0 38 24"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                width="38"
+                height="24"
+                aria-labelledby="pi-master"
+              >
+                <title id="pi-master">Mastercard</title>
+                <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright caption">
+          <small class="copyright__content">© 2024, <a href="/" title="">Limelightpk</a></small>
+          <small class="copyright__content"
+            >, Powered by
+            <a class="alche-link" target="_blank" href="https://www.alchemative.com/">Alchemative</a></small
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "lime footer",
+    "settings": [
+
+ {
+
+"type": "link_list",
+   "id": "menu_link1",
+   "label": "menu"
+
+
+
+      },
+      {
+        "type": "link_list",
+        "id": "menu_link2",
+        "label": "menu"
+      }
+
+
+    ],
+     "presets": [
+    {
+      "name": "lime footer"
+    }
+  ]
+
+  }
+{% endschema %}

@@ -1,0 +1,75 @@
+{% comment %}
+  {% assign myVar = 78 %}
+
+
+  {{ myVar }}
+  <br>
+
+  {% assign num1 = 50 %}
+  {% assign num2 = 60 %}
+
+  Addition= {{ num1 | plus: num2 }}
+  <br>
+
+  {% assign num1 = 100 %}
+  {% assign num2 = 60 %}
+
+  Substraction={{ num1 | minus: num2 }}
+
+  <br>
+
+  {% assign num1 = 100 %}
+  {% assign num2 = 60 %}
+
+  multiplication= {{ num1 | times: num2 }}
+
+  <br>
+
+  {% assign num1 = 100 %}
+  {% assign num2 = 60 %}
+
+  Division={{ num1 | divided_by: num2 }}
+
+  <br>
+
+  {% assign num1 = 100 %}
+  {% assign num2 = 60 %}
+
+  {% if num1 > num2 %}
+    greater num is {{ num2 }}
+  {% else -%}
+    } greater num is {{ num1 }}
+  {% endif -%}
+  <br>
+
+    {% for i in (1..10) %}
+      {% if forloop.first -%}
+        the index is first <br>
+      {% elsif forloop.last -%}
+        the index is last <br>
+      {% else %}
+        the number is : {{ i -}}
+        <br>
+
+      {% endif %}
+    {% endfor -%}
+
+
+  {% for product in collections['mens-clollection'].products %}
+    {{ product.title }}
+    <br>
+  {% endfor %}
+{% endcomment %}
+
+<div style="text-align:center;" font-size="25px;" color="red;">
+  {{ page.title }}
+</div>
+<hr style="align-item:center" ; width="30px;">
+<br>
+
+{% section 'my-page-text' %}
+
+<div>
+  {{ page.content }}
+</div>
+<div>Handel{{ page.handle }}</div>

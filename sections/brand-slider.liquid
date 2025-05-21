@@ -1,0 +1,152 @@
+<style>
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            justify-content: center;
+            align-items: center;
+          }
+
+       img.sec-slider {
+          display: block;
+          height: 130px;
+          width: 100%;
+          padding: 0px 10px;
+          background-color: black;
+          object-fit: contain;
+      }
+        .swiper {
+            width: 90%;
+            height: 100%;
+          justify-content:center;
+        }
+          .swiper-horizontal {
+            touch-action: pan-y;
+        }
+          .swiper {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+            display: block;
+        }
+          .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+
+        }
+          .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0 auto;
+        }
+        .pic-parent {
+        cursor: pointer;
+        padding: 5px;
+    }
+
+          .swiper-slide.swiper-slide-next {
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          .pic-parent{
+
+          }
+
+    .swiper {
+      width: 100%;
+    }
+
+    img.sec-slider {
+      height: 100px;
+      padding: 0px 5px;
+    }
+
+    .swiper-slide {
+      width: auto;  /* Ensure slide width is adjusted */
+    }
+  }
+</style>
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide  swiper.moez">
+        <div class="pic-parent">
+          <img class="sec-slider" src="{{ block.settings.image_with_text_image| img_url: 'master' }}" alt="">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+      var swiper = new Swiper(".swiper", {
+      slidesPerView: 6,  // Default number of slides for larger screens
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // When the window width is <= 768px
+        768: {
+          slidesPerView: 2,  // Show 2 slides on smaller screens
+          spaceBetween: 10   // Adjust space between slides if needed
+        },
+        990:{
+  slidesPerView: 6,
+  spaceBetween:10
+        }
+
+      }
+    });
+</script>
+
+{% schema %}
+    {
+  "name": "swiper slider",
+  "settings": [
+    {
+      "type": "range",
+      "id": "slider_value",
+      "label": "Slider Value",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_with_text_image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper slider"
+    }
+  ]
+}
+{% endschema %}

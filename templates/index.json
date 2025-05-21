@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "lime_slider_M8MPCF": {
+      "type": "lime-slider",
+      "blocks": {
+        "image_block_w9bfYr": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/lime_slider1.jpg"
+          }
+        },
+        "image_block_xVN8Jr": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/lime_slider1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_w9bfYr",
+        "image_block_xVN8Jr"
+      ],
+      "settings": {
+        "slider_value": 50
+      }
+    },
+    "women_wear_heading_gqgmmQ": {
+      "type": "women-wear-heading",
+      "settings": {
+        "heading_text": "WOMEN WAER"
+      }
+    },
+    "women_wear_76zHaB": {
+      "type": "women-wear",
+      "blocks": {
+        "card_ndXRrh": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "dialy wear"
+          }
+        },
+        "card_xYGgNX": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "dialy wear"
+          }
+        },
+        "card_wUj6EU": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "dialy wear"
+          }
+        },
+        "card_tX8yFB": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "daily waer"
+          }
+        },
+        "card_phMxrY": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "daily wear"
+          }
+        },
+        "card_XMfQrJ": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "daily wear"
+          }
+        },
+        "card_araw9k": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "daily wear"
+          }
+        },
+        "card_ybLpq3": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "dialy wear"
+          }
+        }
+      },
+      "block_order": [
+        "card_ndXRrh",
+        "card_xYGgNX",
+        "card_wUj6EU",
+        "card_tX8yFB",
+        "card_phMxrY",
+        "card_XMfQrJ",
+        "card_araw9k",
+        "card_ybLpq3"
+      ],
+      "settings": {}
+    },
+    "simpel_headin_Pwttrg": {
+      "type": "simpel-headin",
+      "settings": {
+        "heading_text": "UNSTICHED"
+      }
+    },
+    "women_wear_KDAeFp": {
+      "type": "women-wear",
+      "blocks": {
+        "card_wPqXJN": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/1.png",
+            "img_titel": "PRINTED"
+          }
+        },
+        "card_p8AHNG": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/2.png",
+            "img_titel": "EMBORDRED"
+          }
+        },
+        "card_yqe7Yw": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/3.png",
+            "img_titel": "BOTTOMS"
+          }
+        }
+      },
+      "block_order": [
+        "card_wPqXJN",
+        "card_p8AHNG",
+        "card_yqe7Yw"
+      ],
+      "settings": {}
+    },
+    "men_girl_EzHVz8": {
+      "type": "men-girl",
+      "settings": {
+        "card_img1": "shopify://shop_images/Men_lim.png",
+        "card_img2": "shopify://shop_images/girl.lime.png"
+      }
+    },
+    "lime_swiper_MB87Fb": {
+      "type": "lime-swiper",
+      "blocks": {
+        "image_block_ecGeBX": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/duppata_300x_6a437da5-16d0-4bb3-9b5d-2076e190554a.png",
+            "img_titel": "scraf"
+          }
+        },
+        "image_block_qrWzRr": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/glasses_300x_d143ac13-43ac-4cfa-b8b7-59660801ab59.png",
+            "img_titel": "glasis"
+          }
+        },
+        "image_block_7qVQWq": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/watches_300x_3745203a-a75d-461c-8353-c04e37c4c74e.png",
+            "img_titel": "wrist watch"
+          }
+        },
+        "image_block_LhJDzF": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/jewelry_300x_bc7583bf-a075-4587-b564-291cb0e190f4.png",
+            "img_titel": "jewelry"
+          }
+        },
+        "image_block_YAgGr9": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/scarfs_300x_8771562d-7c74-4ce2-a8d0-1909f62970ac.png",
+            "img_titel": "dubatta"
+          }
+        },
+        "image_block_MV9MWL": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/footwear_300x_62bd5992-9b5c-4fbe-986a-fdb5b6c5e97a.png",
+            "img_titel": "shoes"
+          }
+        },
+        "image_block_nzpe7x": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/hair_300x_916f7036-1020-4c92-be42-e7fe2cbf7741.png",
+            "img_titel": "hair ban"
+          }
+        },
+        "image_block_cntrEP": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/mufflers_300x_1.png",
+            "img_titel": "mufflers"
+          }
+        },
+        "image_block_jWrKGH": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/belt_300x_56269b32-94be-46f2-a717-801a4d24d9f2.png",
+            "img_titel": "belt"
+          }
+        },
+        "image_block_KgDpYz": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/keychain_300x_38784e22-9f23-49d1-863f-d56d5caa75e7.png",
+            "img_titel": "kechain"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_ecGeBX",
+        "image_block_qrWzRr",
+        "image_block_7qVQWq",
+        "image_block_LhJDzF",
+        "image_block_YAgGr9",
+        "image_block_MV9MWL",
+        "image_block_nzpe7x",
+        "image_block_cntrEP",
+        "image_block_jWrKGH",
+        "image_block_KgDpYz"
+      ],
+      "settings": {
+        "slider_value": 50
+      }
+    },
+    "lime_slider_gHiVVp": {
+      "type": "lime-slider",
+      "blocks": {
+        "image_block_aWyPbL": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/SALE-BANNER.png"
+          }
+        },
+        "image_block_bFQcQ9": {
+          "type": "image_block",
+          "settings": {
+            "image_with_text_image": "shopify://shop_images/50_-banner_2_09a49b27-0785-4676-8ec5-fffc70e71704.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_aWyPbL",
+        "image_block_bFQcQ9"
+      ],
+      "settings": {
+        "slider_value": 50
+      }
+    }
+  },
+  "order": [
+    "lime_slider_M8MPCF",
+    "women_wear_heading_gqgmmQ",
+    "women_wear_76zHaB",
+    "simpel_headin_Pwttrg",
+    "women_wear_KDAeFp",
+    "men_girl_EzHVz8",
+    "lime_swiper_MB87Fb",
+    "lime_slider_gHiVVp"
+  ]
+}

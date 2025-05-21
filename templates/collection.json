@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "bulk",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_grids_banner_kn9MT8": {
+      "type": "product-grids-banner",
+      "disabled": true,
+      "settings": {}
+    },
+    "women_colection_YGhGpJ": {
+      "type": "women-colection",
+      "settings": {
+        "collection_banner_image": "shopify://shop_images/coleection_section.jpg"
+      }
+    },
+    "women_wear_LG9G6A": {
+      "type": "women-wear",
+      "blocks": {
+        "card_zktKqB": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/2.png",
+            "img_titel": "special price"
+          }
+        },
+        "card_V9HMfJ": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/3.png",
+            "img_titel": "bottom"
+          }
+        },
+        "card_bYGpGw": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/lime_card_img.png",
+            "img_titel": "with embriodary"
+          }
+        }
+      },
+      "block_order": [
+        "card_zktKqB",
+        "card_V9HMfJ",
+        "card_bYGpGw"
+      ],
+      "settings": {}
+    },
+    "sort_by_4XiWd7": {
+      "type": "sort-by",
+      "settings": {
+        "paginte_product": "8"
+      }
+    },
+    "pagination_to_hHtyXw": {
+      "type": "pagination-to",
+      "disabled": true,
+      "settings": {
+        "paginte_product": "5"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "product_grids_banner_kn9MT8",
+    "women_colection_YGhGpJ",
+    "women_wear_LG9G6A",
+    "sort_by_4XiWd7",
+    "pagination_to_hHtyXw"
+  ]
+}

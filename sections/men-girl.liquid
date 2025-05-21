@@ -1,0 +1,140 @@
+<style>
+        .imag-cap-wrapper {
+            display: flex;
+            gap: 0 40px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            flex-direction: row;
+            align-content: center;
+        }
+          .parent {
+            flex: 0 0 32%;
+            display: contents;
+        }
+
+          .text-cap {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: VisbyCF-Medium;
+            line-height: 0px;
+        }
+        .img-cap {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          width: 300px;
+      }
+        #img-id {
+            display: flex;
+            border-radius: 7%;
+            min-width: 90%;
+            max-width: 100%;
+            justify-content: center;
+        }
+
+    .circular-collection-wrapper-line {
+        width: 94%;
+        height: 4px;
+        background-color: #e7dfd6;
+        margin: 1rem auto;
+    }
+   @media only screen and (max-width: 768px) {
+  #img-id {
+          display: flex;
+          border-radius: 7%;
+          min-width: 71%;
+          max-width: 100%;
+          justify-content: center;
+      }
+     .img-cap {
+          padding: 5px;
+       width:180px
+      }
+     .text-cap {
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: VisbyCF-Medium;
+          line-height: 0px;
+      }
+     .parent {
+      flex: 0 0 32%;
+      display: contents;
+  }
+     .imag-cap-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 0px;
+      }
+         .img-cap-container {
+          width: 98%;
+      }
+
+
+   }
+</style>
+
+<div class="imag-cap-wrapper">
+  <a href="#" class="parent">
+    <div class="img-cap-div">
+      <div class="text-cap">
+        <p>MEN</p>
+      </div>
+      <div class="img-cap">
+        <img id="img-id" class="men" src="{{section.settings.card_img1| img_url: 'medium' }}" alt="">
+      </div>
+    </div>
+  </a>
+
+  <a href="#" class="parent">
+    <div class="img-cap-div">
+      <div class="text-cap">
+        <p>GIRLS</p>
+      </div>
+      <div class="img-cap">
+        <img id="img-id" class="girl" src="{{section.settings.card_img2 | img_url: 'medium' }}" alt="">
+      </div>
+    </div>
+  </a>
+</div>
+<div class="circular-collection-wrapper-line last-child"></div>
+
+{% schema %}
+  {
+    "name": "men girl",
+    "settings": [
+      {
+
+         "type": "image_picker",
+          "id": "card_img1",
+          "label": "Image"
+
+      },
+
+{
+          "type": "image_picker",
+          "id": "card_img2",
+          "label": "Image"
+
+}
+
+
+
+
+
+    ],
+
+  "presets": [
+ {
+      "name": "men girl",
+
+    }
+
+    ]
+
+  }
+{% endschema %}

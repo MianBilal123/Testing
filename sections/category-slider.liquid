@@ -1,0 +1,380 @@
+<style>
+                              .swiper {
+                                width: 100%;
+                                height: 100%;
+                              }
+
+                              .swiper-slide {
+                                text-align: center;
+                                font-size: 18px;
+                                background: #fff;
+                                justify-content: center;
+                                align-items: center;
+                              }
+
+                            img.sec-slider-si {
+                                display: block;
+                                height: 50px;
+                                width: 100%;
+                                padding: 40px 20px;
+                                background-color: black;
+                                object-fit: contain;
+                            }
+                            .swiper {
+                                width: 90%;
+                                height: 100%;
+                              justify-content:center;
+                            }
+                              .swiper-horizontal {
+                                touch-action: pan-y;
+                            }
+                              .swiper {
+                                margin-left: auto;
+                                margin-right: auto;
+                                position: relative;
+                                overflow: hidden;
+                                list-style: none;
+                                padding: 0;
+                                z-index: 1;
+                                display: block;
+                            }
+                              .swiper-wrapper {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 1;
+
+
+                            }
+                              .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                margin: 0 auto;
+                            }
+                            .pic-parent-walid {
+                              cursor:pointer;
+                            width: 100%;
+                        }
+
+                              .swiper-slide.swiper-slide-next {
+                                width: 25%;
+                            }
+                          .main-div {
+                              width: 100%;
+                              padding-left: 15px;
+                              padding-right: 15px;
+                              display: flex;
+                          }
+                            .collection-img {
+                              width: 25%;
+                          }
+                            img.banner-img {
+                              width: 100%;
+                          }
+                            .slider-headings {
+                              width: 75%;
+                          }
+                            .title-button-wrapper {
+                              margin-bottom: 20px;
+                              font-size: 16px;
+                              padding-left: 57px;
+                              width: 94%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                          }
+                            h2.h3.ft2 {
+                              font-size: 30px;
+                              font-weight: 700;
+                              margin: 0 auto;
+                              line-height: 1.3;
+                          }
+                                a.btn.btn-sm.bdr-btn1 {
+                              padding: 12px 20px;
+                              color: #000;
+                              background-color: #fff;
+                              border: 1px solid #000;
+                              text-decoration: none;
+                              font-weight: 700;
+                          }
+                .bilal {
+                border: 1px solid lightgray;
+            }
+                    a.btn.btn-sm.bdr-btn1:hover {
+                        background: black;
+                        color: white;
+                    }
+                    .details {
+                      padding-left: 3px;
+                      text-align: left;
+                      padding-top: 12px;
+                  }
+                    .grid-view-item__vendor {
+                      font-size: 12px;
+                  }
+                    a.grid-view-item__title {
+                      font-size: 14px;
+                      text-decoration: none;
+                      color: black;
+                  }
+                    span.pr_price {
+                      font-size: 18px;
+                  }
+                    .bilal:hover {
+                      border: 1px solid grey;
+                  }
+                  .swiper-slide{
+                    height: 84%;
+                }
+          .mobile-view{
+            display:none;
+          }
+           @media only screen and (max-width: 768px) {
+          .desktop-view{
+            display:none;
+          }
+
+             .mobile-view{
+            display:block;
+          }
+        .collection-img {
+            width: 100%;
+        }
+
+
+      .slider-headings {
+          width: 100%;
+      }
+             .title-button-wrapper {
+          display: flex;
+          margin-bottom: 18px;
+          font-size: 24px;
+          width: 96%;
+          max-width: 100%;
+          justify-content: center;
+      }
+             h2.h3.ft2 {
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0 auto;
+          line-height: 1.3;
+      }
+
+    .tc.view-all-button-container {
+        text-align: center !important;
+              margin-top: 20px;
+    }
+             a.btn.btn-sm.bdr-btn1 {
+        text-align: center !important;
+    }
+             .swiper-slide.swiper-slide {
+      width: 50% !important;
+  }
+             .swiper-slide.bilal.swiper-slide{
+      width: 50% !important;
+  }
+             .details {
+    letter-spacing: 0.1px;}
+
+
+
+           }
+</style>
+<!-- DESKTOP-VIEW -->
+<div class="main-div  desktop-view">
+  <div class="collection-img">
+    <img class="banner-img" src="{{section.settings.image_with_banner |img_url:'large'}}">
+  </div>
+
+  <div class="slider-headings">
+    <div class="title-button-wrapper">
+      <div class="sec-ttl tc"><h2 class="h3 ft2">New Arrivals</h2></div>
+      <div class="tc view-all-button-container">
+        <a href="/collections/new-arrivals-womens-shoes" title="NEW ARRIVALS" class="btn btn-sm bdr-btn1"
+          >Shop New Arrivals</a
+        >
+      </div>
+    </div>
+
+    <div class="swiper mySwiper  myswipe">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide bilal">
+            <div class="pic-parent-walid">
+              <img class="sec-slider-simpel" src="{{ block.settings.image_with_text_image| img_url: 'master' }}" alt="">
+            </div>
+            <div class="details">
+              <div class="grid-view-item__vendor">{{ block.settings.img_text }}</div>
+              <a
+                href="/products/madison-patricia-medium-block-heel-court-blue-grey-1"
+                title="Madison Patricia Medium Block Heel Court - Blue/Grey"
+                class="grid-view-item__title"
+              >
+                {{- block.settings.img_description -}}
+              </a>
+              <div class="grid-view-item__meta">
+                <span class="pr_price">{{ block.settings.img_prize }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="details">
+          <div class="grid-view-item__vendor">{{ block.settings.img_text }}</div>
+          <a
+            href="/products/madison-patricia-medium-block-heel-court-blue-grey-1"
+            title="Madison Patricia Medium Block Heel Court - Blue/Grey"
+            class="grid-view-item__title"
+          >
+            {{- block.settings.img_description -}}
+          </a>
+          <div class="grid-view-item__meta">
+            <span class="pr_price">{{ block.settings.img_prize }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE-VIEW -->
+
+<div class="main-div  mobile-view">
+  <div class="collection-img">
+    <img class="banner-img" src="{{section.settings.image_with_banner |img_url:'large'}}">
+  </div>
+
+  <div class="slider-headings">
+    <div class="title-button-wrapper">
+      <div class="sec-ttl tc"><h2 class="h3 ft2">New Arrivals</h2></div>
+    </div>
+
+    <div class="swiper mySwiper  myswipe">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide bilal">
+            <div class="pic-parent-walid">
+              <img class="sec-slider-simpel" src="{{ block.settings.image_with_text_image| img_url: 'master' }}" alt="">
+            </div>
+            <div class="details">
+              <div class="grid-view-item__vendor">{{ block.settings.img_text }}</div>
+              <a
+                href="/products/madison-patricia-medium-block-heel-court-blue-grey-1"
+                title="Madison Patricia Medium Block Heel Court - Blue/Grey"
+                class="grid-view-item__title"
+              >
+                {{- block.settings.img_description -}}
+              </a>
+              <div class="grid-view-item__meta">
+                <span class="pr_price">{{ block.settings.img_prize }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="details">
+          <div class="grid-view-item__vendor">{{ block.settings.img_text }}</div>
+          <a
+            href="/products/madison-patricia-medium-block-heel-court-blue-grey-1"
+            title="Madison Patricia Medium Block Heel Court - Blue/Grey"
+            class="grid-view-item__title"
+          >
+            {{- block.settings.img_description -}}
+          </a>
+          <div class="grid-view-item__meta">
+            <span class="pr_price">{{ block.settings.img_prize }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tc view-all-button-container">
+      <a href="/collections/new-arrivals-womens-shoes" title="NEW ARRIVALS" class="btn btn-sm bdr-btn1"
+        >Shop New Arrivals</a
+      >
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper(".myswipe", {
+     slidesPerView: 4,
+     centeredSlides: true,
+     spaceBetween: 10,
+    loop:true,
+     grabCursor: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     breakpoints: {
+      // When the window width is <= 768px
+      768: {
+        slidesPerView: 2,  // Show 2 slides on smaller screens
+        spaceBetween: 10   // Adjust space between slides if needed
+      },
+       990:{
+         slidesPeriVew:4,
+         spaceBetween:10
+       }
+
+
+    }
+   });
+</script>
+
+{% schema %}
+    {
+  "name": "swiper slider",
+  "settings": [
+    {
+      "type": "range",
+      "id": "slider_value",
+      "label": "Slider Value",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "image_picker",
+      "id": "image_with_banner",
+      "label": "Image"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_with_text_image",
+          "label": "Image"
+        },
+
+        {
+    "type": "text",
+          "id": "img_text",
+          "label": "text"
+        },
+        {
+          "type": "text",
+          "id": "img_description",
+          "label": "text"
+
+        },
+        {
+          "type": "text",
+          "id": "img_prize",
+          "label": "prize"
+        }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper slider"
+    }
+  ]
+}
+{% endschema %}

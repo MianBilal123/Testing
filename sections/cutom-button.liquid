@@ -1,0 +1,158 @@
+<style>
+        a.custom-button:hover {
+          color: white;
+          background-color: black;
+        }
+
+        .custom-button {
+        font-weight: 700;
+        width: 19%;
+        background-color: white;
+        display: inline-block;
+        padding: 5px 0px;
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
+        border: 2px solid;
+        margin-right: 7px;
+    }
+
+        .custom-button-section {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          text-align: center; /* Ensures all buttons are centered */
+        }
+
+        .custom-button:hover {
+          opacity: 0.8;
+        }
+        a.custom-button {
+          TEXT-ALIGN: center ! IMPORTANT;
+      }
+    .btn-child {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+   @media only screen and (max-width: 768px) {
+  a.custom-button {
+      width: 100%;
+      padding-top: 5px;
+      margin-top: 10px;
+      margin-left: 3px;
+  }
+
+
+   }
+</style>
+
+<div class="custom-button-section" style="text-align: {{ section.settings.button_alignment }};">
+  <div class="btn-child">
+    {% for block in section.blocks %}
+      <a
+        href="{{ block.settings.button_url }}"
+        class="custom-button"
+        style="background-color: {{ block.settings.button_color }};"
+      >
+        {{ block.settings.button_text }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Button",
+  "settings": [
+    {
+      "type": "select",
+      "id": "button_alignment",
+      "label": "Button Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Click Me"
+        },
+        {
+          "type": "text",
+          "id": "button_url",
+          "label": "Button URL",
+          "default": "#"
+        }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Button",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Button 1",
+            "button_url": "#",
+
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Button 2",
+            "button_url": "#",
+
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Button 3",
+            "button_url": "#",
+
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Button 4",
+            "button_url": "#",
+
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Button 5",
+            "button_url": "#",
+
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

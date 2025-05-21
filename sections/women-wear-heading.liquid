@@ -1,0 +1,56 @@
+<style>
+      .amir
+    {
+      margin: 0 auto;
+        width: 94%;
+        height: 4px;
+          background-color: #e7dfd6;
+          margin-top:4rem;
+      }
+
+
+        .circular-collection-heading {
+      text-align: center !important;
+      /* font-size: 35px; */
+      font-weight: 700;
+      margin-bottom: 20px;
+      position: relative;
+      left: 3%;
+      transform: translate(-50px);
+  }
+
+    a:empty, ul:empty, dl:empty, div:empty, section:empty, article:empty, p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty {
+        display: block;
+    }
+</style>
+<div class="amir"></div>
+<div class="circular-collection-heading">
+  <a href="https://www.limelight.pk/collections/pret">
+    <h1 class="circular-collection-heading">
+      {{ section.settings.heading_text }}
+    </h1>
+  </a>
+</div>
+
+{% schema %}
+  {
+    "name": "lime headings",
+    "settings": [
+
+ {
+  "type": "text",
+  "id":   "heading_text",
+  "label":"Heading text"
+}
+
+    ],
+
+    "presets": [
+ {
+      "name": "lime headings",
+
+    }
+
+    ]
+  }
+{% endschema %}

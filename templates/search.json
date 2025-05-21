@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "disabled": true,
+      "settings": {
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "article_show_date": true,
+        "article_show_author": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "women_colection_q7Yp9n": {
+      "type": "women-colection",
+      "settings": {
+        "collection_banner_image": "shopify://shop_images/coleection_section.jpg"
+      }
+    },
+    "women_wear_tz46QQ": {
+      "type": "women-wear",
+      "blocks": {
+        "card_MVgYLr": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/3.png",
+            "img_titel": "bottoms"
+          }
+        },
+        "card_M6VWDa": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/2.png",
+            "img_titel": "unstiched"
+          }
+        },
+        "card_ebca86": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/1.png",
+            "img_titel": "stiched"
+          }
+        }
+      },
+      "block_order": [
+        "card_MVgYLr",
+        "card_M6VWDa",
+        "card_ebca86"
+      ],
+      "settings": {}
+    },
+    "sort_by_4wCNeQ": {
+      "type": "sort-by",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "women_colection_q7Yp9n",
+    "women_wear_tz46QQ",
+    "sort_by_4wCNeQ"
+  ]
+}

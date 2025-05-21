@@ -1,0 +1,121 @@
+<style>
+      .card-wrapper {
+        cursor: pointer;
+        padding-top: 4rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+
+       .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+         justify-content: center;
+    }
+
+        .card {
+         width: 23%;
+          overflow: hidden;
+          text-align: center;
+      }
+
+        .card img {
+          width: 100%;
+          height: auto;
+        }
+
+
+
+        .card-title {
+              margin-top: 5px;
+          font-size: 20px;
+          font-weight: 600;
+         text-transform: uppercase;
+        }
+
+        .card-description {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 10px;
+        }
+
+        .card-link {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+
+        .card-link:hover {
+          background-color: #0056b3;
+
+        }
+
+    @media only screen and (max-width: 768px) {
+  .card {
+      width: 40%;
+  }
+
+
+    }
+</style>
+
+<div class="card-wrapper">
+  {% for block in section.blocks %}
+    <div class="card">
+      <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="{{ card.settings.card_title | escape }}">
+      <div class="card-content">
+        <h3 class="card-title">{{ block.settings.card_title }}</h3>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Card Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title"
+
+        },
+        {
+          "type": "textarea",
+          "id": "card_description",
+          "label": "Card Description",
+
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card Link"
+
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Card Section",
+      "category": "Custom",
+
+    }
+  ]
+}
+{% endschema %}

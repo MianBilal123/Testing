@@ -1,0 +1,91 @@
+<style>
+      img.collection-banner-img {
+          position: relative !important;
+      }
+        img.collection-banner-img {
+          width: 100% !important;
+          height: auto !important;
+      }
+        .collection-hero--with-image .collection-hero__inner {
+          margin-bottom: 0;
+      }
+        .collection-hero__inner {
+          display: flex;
+          flex-direction: column;
+      }
+        .page-width {
+        max-width: 160rem;
+        margin: 0 auto;
+        padding: 4rem 6.5rem;
+    }
+
+        .collection-hero-line {
+          border-bottom: 1px solid lightgray;
+          width: 80%;
+          margin: 0 auto;
+          padding-top: 12px;
+      }
+       .desktop-only, .desktop-without-tab {
+      display: block !important;
+  }
+        .collection-hero--with-image .collection-hero__text-wrapper {
+          padding: .5rem 0;
+      }
+        .collection-hero__text-wrapper {
+          flex-basis: 100%;
+      }
+        .collection-hero--with-image .collection-hero__title {
+          margin: 0;
+          font-family: VisbyCF-Bold;
+      }
+        .collection-hero__title {
+          font-size: 30px;
+          text-transform: capitalize;
+          text-align: center;
+      }
+</style>
+
+<div class="collection-hero collection-hero--with-image daily-wear">
+  <div class="collection-hero__inner page-width">
+    {% if section.settings.collection_banner_image %}
+      <img
+        class="collection-banner-img"
+        src="{{ section.settings.collection_banner_image | img_url: 'large' }}"
+        alt="{{ collection.title }}"
+      >
+    {% else %}
+      {% if collection.image %}
+        <img
+          class="collection-banner-img"
+          src="{{women.collection.image | img_url: 'large' }}"
+          alt="{{ collection.title }}"
+        >
+      {% endif %}
+    {% endif %}
+    <div class="collection-hero-line desktop-only"></div>
+    <div class="collection-hero__text-wrapper">
+      <h1 class="collection-hero__title"><span class="visually-hidden">Collection: </span>DAILY WEAR</h1>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "women colection",
+  "settings": [
+
+   {
+        "type": "image_picker",
+        "id": "collection_banner_image",
+        "label": "Collection Banner Image"
+      }
+
+
+
+  ],
+    "presets": [
+      {
+        "name": "women colection"
+      }
+    ]
+}
+{% endschema %}

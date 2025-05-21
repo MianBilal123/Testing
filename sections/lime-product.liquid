@@ -1,0 +1,1620 @@
+<style>
+
+
+
+  
+ul.d-list {
+    list-style: none;
+  padding: 0 !important;
+}
+
+.product__description.rte {
+    margin-top: 20px;
+}
+  
+  
+  .option-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.size-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.bilal{
+  display:none;
+}
+
+button.quantity__button.no-js-hidden.disabled {
+    cursor: pointer;
+}
+
+
+  .quantity:before{
+    display:none;
+  }
+.quantity:after{
+display:none;
+}
+  .swiper-button-next {
+
+    display: block !important;
+  }
+  .swiper-button-prev {
+    display: block !important;
+}
+
+
+
+ body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+
+
+  
+  /* .input{
+    display:none;
+  } */
+            .swiper {
+               width: 100%;
+               height: 100%;
+             }
+
+          .swiper-container.product-featured-img-main {
+             width: 100%;
+             padding-bottom: 10px;
+        }
+
+             .swiper-slide {
+               width: 100% !important;
+               text-align: center;
+               font-size: 18px;
+               background: #fff;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+             }
+
+             .swiper-slide img {
+               display: block;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+             }
+          .product-img-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 69%;
+        }
+
+          .page-width {
+                 max-width: 135rem;
+              margin: 0 auto;
+              padding: 0 1.5rem;
+
+          }
+          .back-btn-container {
+              width: 20px;
+              margin-left: auto;
+          }
+            a {
+              color: #000;
+              text-decoration: none;
+          }
+            .product-page-wrapper {
+              border-bottom: 1px solid rgba(0, 0, 0, .3);
+              padding-bottom: 20px;
+          }
+            .product {
+              margin: 0;
+          }
+            .grid {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 2rem;
+              margin-left: -.5rem;
+              padding: 0;
+              list-style: none;
+          }
+            .product-page-wrapper .product-image-wrapper {
+              flex: 0 0 70%;
+              display: flex;
+          }
+
+              .product-secondary-img-main {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+          }
+
+
+            .product-secondary-imgs {
+              display: flex;
+              flex-wrap: wrap;
+              /* width: 35%; */
+          }
+            .product-secondary-img {
+              padding: 3px;
+              cursor: pointer;
+              flex: 0 0 23%;
+          }
+            .product-des-main {
+              padding-bottom: 30px;
+              padding-top: 30px;
+          }
+            .desktop-only, .desktop-without-tab {
+              display: block;
+          }
+            .product-des-main h2, .mob-des-head {
+              font-size: 20px;
+              font-family: VisbyCF-Bold;
+              border-bottom: 1px solid #000;
+              width: fit-content;
+          }
+            .product-image-wrapper .product__description ul {
+              list-style: none;
+              padding-left: 0;
+              margin-top: 0;
+          }
+            .rte li {
+              list-style: inherit;
+          }
+            .share-wishlist-main {
+              display: flex;
+          }
+
+            .wishlist-main {
+              font-family: VisbyCF-Medium;
+              font-size: 14px;
+              color: #000;
+              display: flex;
+              align-items: center;
+              padding-right: 50px;
+          }
+            .product-share-icon, .wishlist-icon {
+              padding-right: 5px;
+          }
+            .share-button {
+              display: block;
+              position: relative;
+          }
+            .product-featured-img-main {
+              flex: 0 0 50%;
+          }
+            .product-page-wrapper .product__info-wrapper {
+              flex: 0 0 30%;
+          }
+               .product:not(.product--no-media):not(.featured-product) .product__info-wrapper {
+                  padding-left: 2rem;
+                  max-width: 36%;
+                  width: calc(36% - .5rem);
+                  display: flex;
+                  flex-direction: column;
+              }
+            .product__info-container {
+                  padding-top: 20px;
+              }
+            .product__info-container>*:first-child {
+                  margin-top: 0;
+              }
+            .product__title {
+              word-break: break-word;
+              margin-bottom: 1.5rem;
+              font-family: tahoma;
+              font-size: 25px;
+          }
+
+            .product__info-container>*+* {
+              margin: 1.5rem 0;
+          }
+            .product__info-container .price--large {
+              font-family: VisbyCF-Bold;
+              font-size: 18px;
+          }
+            .product .price {
+              align-items: flex-start;
+          }
+            .product-form__input {
+              flex: 0 0 100%;
+              padding: 0;
+              margin: 0 0 1.2rem;
+              max-width: 37rem;
+              min-width: fit-content;
+              border: none;
+          }
+            .product-form__input .form__label {
+              padding-left: 0;
+              font-family: VisbyCF-Bold;
+              font-size: 14px;
+          }
+            .form__label {
+              display: block;
+              margin-bottom: .6rem;
+          }
+            .quantity {
+              position: relative;
+              height: 3rem;
+              width: 13rem;
+              display: flex;
+              border: 1px solid rgba(0, 0, 0, .5);
+              border-radius: 10px;
+          }
+
+            .quantity__button {
+              width: 3rem;
+              flex-shrink: 0;
+              font-size: 1.8rem;
+              border: 0;
+              background-color: transparent;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #000;
+              padding: 0;
+          }
+
+          .quantity__input {
+              color: #000;
+              font-size: 1.4rem;
+              opacity: 1;
+              text-align: center;
+              background-color: transparent;
+              border: 0;
+              padding: 0 .5rem;
+              width: 100%;
+              flex-grow: 1;
+              -webkit-appearance: none;
+              appearance: none;
+              border-right: 1px solid rgba(0, 0, 0, .5);
+              border-left: 1px solid rgba(0, 0, 0, .5);
+              box-shadow: none;
+              outline: none;
+          }
+            .visually-hidden {
+              position: absolute !important;
+              overflow: hidden;
+              width: 1px;
+              height: 1px;
+              margin: -1px;
+              padding: 0;
+              border: 0;
+              clip: rect(0 0 0 0);
+              word-wrap: normal !important;
+          }
+            .product__info-container>*+* {
+              margin: 1.5rem 0;
+          }
+            .product__info-container .product-form {
+              margin: 2.5rem 0;
+              font-family: VisbyCF-Medium;
+              font-size: 14px;
+              color: #000;
+          }
+            .product-form {
+              display: block;
+          }
+            .product__info-wrapper .cstm-care-main {
+              margin-top: 0;
+          }
+            .accordion {
+              margin-top: 2.5rem;
+              margin-bottom: 0;
+              border-top: .1rem solid rgba(var(--color-foreground), .08);
+              border-bottom: .1rem solid rgba(var(--color-foreground), .08);
+          }
+
+            .accordion summary {
+              display: flex;
+              position: relative;
+              line-height: 1;
+              padding: 1.5rem 0;
+          }
+
+
+            summary {
+              cursor: pointer;
+              list-style: none;
+              position: relative;
+          }
+            .accordion .summary__title {
+              display: flex;
+              flex: 1;
+          }
+
+            .product__info-wrapper .cstm-care-main .accordion__title {
+              font-family: VisbyCF-Medium;
+              font-size: 17px;
+          }
+            .accordion__title {
+              display: inline-block;
+              max-width: calc(100% - 6rem);
+              min-height: 1.6rem;
+              margin: 0;
+              word-break: break-word;
+          }
+
+
+
+            .product__info-wrapper .cstm-care-main .accordion__content {
+              padding: 0;
+              margin-bottom: 0;
+              font-family: VisbyCF-Medium;
+              font-size: 14px;
+          }
+            .rte:after {
+              clear: both;
+              content: "";
+              display: block;
+          }
+
+          .screen-view{
+
+            display:block;
+          }
+          .mobale-view{
+
+            display:none;
+          }
+
+            @media only screen and (max-width:768px){
+
+        .screen-view{
+          display:none;
+
+        }
+
+      .product-form__buttons.product-form__buttons_fixed {
+    width:41rem;
+}
+
+        .mobale-view{
+        display:block !important;
+
+        }
+
+  .wishlist-main {
+      font-family: VisbyCF-Medium;
+      font-size: 14px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+  }
+
+
+        .product-img-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+
+      .page-width {
+          max-width: 135rem;
+          margin: 0 auto;
+          padding: 0;
+      }
+              .product-secondary-imgs {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+          img.product-secondary-img {
+          border-radius: 10px;
+            height: -webkit-fill-available;
+      }
+          .back-btn-container {
+          width: 50px;
+          margin-left: auto;
+      }
+
+    div#ProductInfo-template--16780884967512__main {
+        margin: 0 auto;
+      width: 350px;
+    }
+     h1.product__title {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+              h1.product__title {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .no-js-hidden.product-page-price {
+        font-weight: bolder;
+        border-bottom: 1px solid lightgray;
+    }
+
+
+    .product-form__input.product-form__quantity {
+        width: 50%;
+        display: inline-block;
+        margin-top: 0;
+        border-right: 1px solid #000;
+    }
+
+    .share-wishlist-main.desktop-without-tab {
+        width: 50%;
+        display: inline-flex;
+        float: right;
+        margin-top: 27px;
+        padding-left: 5px;
+        height: 48px;
+        margin-bottom: 0 !important;
+    }
+
+    .product__description.rte.tab-mob-only {
+        padding-left: 20px;
+    }
+
+
+
+            }
+</style>
+{% comment %}
+  Mobile View
+{% endcomment %}
+
+<div class="page-width mobale-view">
+  <div class="back-btn-container">
+    <a href="{{women_collection.url}}">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </a>
+  </div>
+  <div class="product-page-wrapper product grid grid--1-col grid--2-col-tablet mobale-view">
+    <div class="product-img-wrapper">
+      <div class="product-secondary-img-main">
+        <div class="product-secondary-imgs">
+          
+          {% for media in product.media %}
+            <img
+              width="80x"
+              height="115"
+              class="product-secondary-img"
+              src="{{media.preview_image | img_url: 'master'}} "
+            >
+          {% endfor %}
+  
+        </div>
+        <div class="product__info-wrapper grid__item">
+          <div id="ProductInfo-template--16780884967512__main" class="product__info-container">
+            <h1 class="product__title">
+              {{ product.title }}
+            </h1>
+            <div class="no-js-hidden product-page-price">
+              <div class="price price--large">
+                <div class="price__regular">
+                  <span> RS.{{ product.price }} </span>
+                </div>
+              </div>
+            </div>
+            <div class="size">
+          {%- for option in product.options_with_values -%}
+            <div class="option-name">
+            <label>{{ option.name }}</label>
+              </div>
+             <div class="size-main">
+             {% for value in option.values %}
+              
+               <div class="size-varients">
+             <label class="input" for="value-{{ value }}" > {{ value }} </label>  
+          <input  type="radio" id="value-{{ value }} name="options[{{ option.name }}]" value="{{ value }}" {% if forloop.first %} checked {% endif %}>
+          {{ value }}
+       
+          </div>
+              
+      {% endfor %}
+                </div>
+          {%- endfor -%}
+        </div>
+            <div class="product-form__input product-form__quantity">
+              <label class="form__label" for="Quantity-template--16780884967512__main"> Quantity </label>
+              <quantity-input class="quantity">
+                <button class="quantity__button no-js-hidden" name="minus" type="button">
+                  <span class="visually-hidden">Decrease quantity for 2 Piece Khaddar Suit-Embroidered (Pret)</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-minus"
+                    fill="none"
+                    viewBox="0 0 10 2"
+                  >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor">
+                    </path>
+                  </svg>
+                </button>
+                <input
+                  class="quantity__input"
+                  type="number"
+                  name="quantity"
+                  id="Quantity-template--16780884967512__main"
+                  min="1"
+                  value="1"
+                  readonly=""
+                  form="product-form-template--16780884967512__main"
+                  data-gtm-form-interact-field-id="7"
+                >
+                <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <span class="visually-hidden">Increase quantity for 2 Piece Khaddar Suit-Embroidered (Pret)</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-plus"
+                    fill="none"
+                    viewBox="0 0 10 10"
+                  >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor">
+                    </path>
+                  </svg>
+                </button>
+              </quantity-input>
+            </div>
+            <div class="share-wishlist-main desktop-without-tab">
+              <div class="wishlist-main">
+                <svg
+                  class="wishlist-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 33 29"
+                  fill="none"
+                >
+                  <path d="M16.4333 28.71L15.8533 28.2267C3.38333 18.0767 0 14.5 0 8.7C0 3.86667 3.86667 0 8.7 0C12.6633 0 14.8867 2.22333 16.4333 3.96333C17.98 2.22333 20.2033 0 24.1667 0C29 0 32.8667 3.86667 32.8667 8.7C32.8667 14.5 29.4833 18.0767 17.0133 28.2267L16.4333 28.71ZM8.7 1.93333C4.93 1.93333 1.93333 4.93 1.93333 8.7C1.93333 13.63 5.02667 16.9167 16.4333 26.1967C27.84 16.9167 30.9333 13.63 30.9333 8.7C30.9333 4.93 27.9367 1.93333 24.1667 1.93333C20.7833 1.93333 18.9467 3.96333 17.4967 5.60667L16.4333 6.86333L15.37 5.60667C13.92 3.96333 12.0833 1.93333 8.7 1.93333Z" fill="black"></path>
+                </svg>
+                <span> Wishlist </span>
+              </div>
+              <div class="share-btn-main">
+                <share-button class="share-button">
+                  <button class="share-button__button">
+                    <svg
+                      class="product-share-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 32 29"
+                      fill="none"
+                    >
+                      <path d="M26.9816 29C24.6516 29 22.7622 27.1612 22.7622 24.8937C22.7622 24.7782 22.7707 24.6628 22.7792 24.5473L22.8131 23.9784L7.93525 17.4643L7.52009 17.8848C6.7152 18.7012 5.63071 19.1464 4.47844 19.1464C2.15696 19.1464 0.267578 17.3076 0.267578 15.0401C0.267578 12.7808 2.15696 10.942 4.47844 10.942C5.57988 10.942 6.61353 11.346 7.393 12.0881L7.82511 12.4922L22.8724 5.17828L22.7961 4.60108C22.7707 4.43617 22.7622 4.27125 22.7622 4.10634C22.7622 1.83878 24.6516 0 26.9816 0C29.3031 0 31.1924 1.83878 31.1924 4.10634C31.1924 6.36565 29.3031 8.20444 26.9816 8.20444C25.8801 8.20444 24.8465 7.8004 24.067 7.05829L23.6349 6.65425L8.56222 13.9929L8.67236 14.5948C8.69778 14.7432 8.70625 14.8999 8.70625 15.0483C8.70625 15.172 8.69778 15.2875 8.68931 15.4029L8.65542 15.9718L23.5332 22.4859L23.9484 22.0654C24.7448 21.2491 25.8293 20.8038 26.99 20.8038C29.3115 20.8038 31.2009 22.6426 31.2009 24.9019C31.1924 27.1612 29.3031 29 26.9816 29Z" fill="black"></path>
+                    </svg>
+
+                    Share
+                  </button>
+                  <details hidden="">
+                    <summary class="share-button__button">
+                      <svg
+                        class="product-share-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 32 29"
+                        fill="none"
+                      >
+                        <path d="M26.9816 29C24.6516 29 22.7622 27.1612 22.7622 24.8937C22.7622 24.7782 22.7707 24.6628 22.7792 24.5473L22.8131 23.9784L7.93525 17.4643L7.52009 17.8848C6.7152 18.7012 5.63071 19.1464 4.47844 19.1464C2.15696 19.1464 0.267578 17.3076 0.267578 15.0401C0.267578 12.7808 2.15696 10.942 4.47844 10.942C5.57988 10.942 6.61353 11.346 7.393 12.0881L7.82511 12.4922L22.8724 5.17828L22.7961 4.60108C22.7707 4.43617 22.7622 4.27125 22.7622 4.10634C22.7622 1.83878 24.6516 0 26.9816 0C29.3031 0 31.1924 1.83878 31.1924 4.10634C31.1924 6.36565 29.3031 8.20444 26.9816 8.20444C25.8801 8.20444 24.8465 7.8004 24.067 7.05829L23.6349 6.65425L8.56222 13.9929L8.67236 14.5948C8.69778 14.7432 8.70625 14.8999 8.70625 15.0483C8.70625 15.172 8.69778 15.2875 8.68931 15.4029L8.65542 15.9718L23.5332 22.4859L23.9484 22.0654C24.7448 21.2491 25.8293 20.8038 26.99 20.8038C29.3115 20.8038 31.2009 22.6426 31.2009 24.9019C31.1924 27.1612 29.3031 29 26.9816 29Z" fill="black"></path>
+                      </svg>
+
+                      Share
+                    </summary>
+                    <div id="Product-share-template--16780884967512__main" class="share-button__fallback motion-reduce">
+                      <div class="field">
+                        <span
+                          id="ShareMessage-template--16780884967512__main"
+                          class="share-button__message hidden"
+                          role="status"
+                        >
+                        </span>
+                        <input
+                          type="text"
+                          class="field__input"
+                          id="url"
+                          value="https://www.limelight.pk/products/a0263st-xsl-227"
+                          placeholder="Link"
+                          onclick="this.select();"
+                          readonly=""
+                        >
+                        <label class="field__label" for="url">Link</label>
+                      </div>
+                      <button class="share-button__close hidden no-js-hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          role="presentation"
+                          class="icon icon-close"
+                          fill="none"
+                          viewBox="0 0 18 17"
+                        >
+                            <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                          </path>
+                        </svg>
+
+                        <span class="visually-hidden">Close share</span>
+                      </button>
+                      <button class="share-button__copy no-js-hidden">
+                        <svg
+                          class="icon icon-clipboard"
+                          width="11"
+                          height="13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          viewBox="0 0 11 13"
+                        >
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1a1 1 0 011-1h7a1 1 0 011 1v9a1 1 0 01-1 1V1H2zM1 2a1 1 0 00-1 1v9a1 1 0 001 1h7a1 1 0 001-1V3a1 1 0 00-1-1H1zm0 10V3h7v9H1z" fill="currentColor"></path>
+                        </svg>
+
+                        <span class="visually-hidden">Copy link</span>
+                      </button>
+                    </div>
+                  </details>
+                </share-button>
+
+                <script
+                  src="//www.limelight.pk/cdn/shop/t/222/assets/share.js?v=137220683999880290031725905617"
+                  defer="defer"
+                ></script>
+              </div>
+            </div>
+
+            <div class="product-form-main">
+              <div class="product-form__buttons product-form__buttons_fixed">
+                <button type="submit" name="add" class="product-form__submit button button--full-width button--primary">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% comment %}
+        {% endcomment %}
+      </div>
+      <div class="swiper swiper-container product-featured-img-main swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-container product-featured-img-main">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              {% for media in product.media %}
+                <div class="swiper-slide">
+                  <img class="zoomImg" src="{{ media.preview_image | img_url: 'master' }}" alt="">
+                </div>
+              {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__description rte tab-mob-only">
+      <div class="product-des-main desktop-without-tab">
+        <h2>Description</h2>
+        <div class="product__description rte">
+          <ul>
+            <li>
+              {{ product.description }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product__accordion accordion cstm-care-main">
+        <details>
+          <summary>
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Care Instructions</h2>
+            </div>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              class="icon icon-caret"
+              viewBox="0 0 10 6"
+            >
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+              </path>
+            </svg>
+          </summary>
+          <div class="accordion__content rte">
+            Wash light and bright colors separately. Do not bleach. Do not twist/wring, warm iron to sequined, beaded,
+            and delicate fabrics. Do not dry in direct sunlight.
+          </div>
+        </details>
+      </div>
+      <div class="product__accordion accordion cstm-care-main">
+        <details>
+          <summary>
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Disclaimer</h2>
+            </div>
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+              </path>
+            </svg>
+          </summary>
+          <div class="accordion__content rte">
+            Actual colors of the product may vary from the colors being displayed on your device.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+  DESKTOP VIEW
+{% endcomment %}
+<div class="page-width  screen-view">
+  <div class="back-btn-container">
+    <a href="{{women_collection.url}}">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </a>
+  </div>
+  <div class="product-page-wrapper product grid grid--1-col grid--2-col-tablet  screen-view">
+    <div class="product-img-wrapper ">
+      <div class="product-secondary-img-main">
+      <div class="product-secondary-imgs">
+  {% for media in product.media %}
+    <img
+      width="80"
+      height="115"
+      class="product-secondary-img"
+      src="{{media.preview_image | img_url: 'master'}}"
+      data-index="{{ forloop.index0 }}" 
+    >
+  {% endfor %}
+</div>
+
+        <div class="product-des-main desktop-without-tab">
+          <h2>Description</h2>
+          <div class="product__description rte">
+            <ul class="d-list">
+              <li class="d-child">
+                {{ product.description }}
+              </li>
+            </ul>
+          </div>
+          {% comment %}
+                    {% for media in product.media %}
+                      <div class="swiper-slide">
+
+                            <img
+                              class="zoomImg"
+                              src=" {{media.preview_image| img_url: 'master' }}"
+                              alt=""
+                            >
+
+
+                        </div>
+            {% endfor %}
+          {% endcomment %}
+        </div>
+        <div class="share-wishlist-main desktop-without-tab">
+          <div class="wishlist-main">
+            <svg
+              class="wishlist-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 33 29"
+              fill="none"
+            >
+              <path d="M16.4333 28.71L15.8533 28.2267C3.38333 18.0767 0 14.5 0 8.7C0 3.86667 3.86667 0 8.7 0C12.6633 0 14.8867 2.22333 16.4333 3.96333C17.98 2.22333 20.2033 0 24.1667 0C29 0 32.8667 3.86667 32.8667 8.7C32.8667 14.5 29.4833 18.0767 17.0133 28.2267L16.4333 28.71ZM8.7 1.93333C4.93 1.93333 1.93333 4.93 1.93333 8.7C1.93333 13.63 5.02667 16.9167 16.4333 26.1967C27.84 16.9167 30.9333 13.63 30.9333 8.7C30.9333 4.93 27.9367 1.93333 24.1667 1.93333C20.7833 1.93333 18.9467 3.96333 17.4967 5.60667L16.4333 6.86333L15.37 5.60667C13.92 3.96333 12.0833 1.93333 8.7 1.93333Z" fill="black"></path>
+            </svg>
+            <span> Wishlist </span>
+          </div>
+          <div class="share-btn-main">
+            <share-button class="share-button">
+              <button class="share-button__button">
+                <svg
+                  class="product-share-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 32 29"
+                  fill="none"
+                >
+                  <path d="M26.9816 29C24.6516 29 22.7622 27.1612 22.7622 24.8937C22.7622 24.7782 22.7707 24.6628 22.7792 24.5473L22.8131 23.9784L7.93525 17.4643L7.52009 17.8848C6.7152 18.7012 5.63071 19.1464 4.47844 19.1464C2.15696 19.1464 0.267578 17.3076 0.267578 15.0401C0.267578 12.7808 2.15696 10.942 4.47844 10.942C5.57988 10.942 6.61353 11.346 7.393 12.0881L7.82511 12.4922L22.8724 5.17828L22.7961 4.60108C22.7707 4.43617 22.7622 4.27125 22.7622 4.10634C22.7622 1.83878 24.6516 0 26.9816 0C29.3031 0 31.1924 1.83878 31.1924 4.10634C31.1924 6.36565 29.3031 8.20444 26.9816 8.20444C25.8801 8.20444 24.8465 7.8004 24.067 7.05829L23.6349 6.65425L8.56222 13.9929L8.67236 14.5948C8.69778 14.7432 8.70625 14.8999 8.70625 15.0483C8.70625 15.172 8.69778 15.2875 8.68931 15.4029L8.65542 15.9718L23.5332 22.4859L23.9484 22.0654C24.7448 21.2491 25.8293 20.8038 26.99 20.8038C29.3115 20.8038 31.2009 22.6426 31.2009 24.9019C31.1924 27.1612 29.3031 29 26.9816 29Z" fill="black"></path>
+                </svg>
+
+                Share
+              </button>
+              <details hidden="">
+                <summary class="share-button__button">
+                  <svg
+                    class="product-share-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 32 29"
+                    fill="none"
+                  >
+                    <path d="M26.9816 29C24.6516 29 22.7622 27.1612 22.7622 24.8937C22.7622 24.7782 22.7707 24.6628 22.7792 24.5473L22.8131 23.9784L7.93525 17.4643L7.52009 17.8848C6.7152 18.7012 5.63071 19.1464 4.47844 19.1464C2.15696 19.1464 0.267578 17.3076 0.267578 15.0401C0.267578 12.7808 2.15696 10.942 4.47844 10.942C5.57988 10.942 6.61353 11.346 7.393 12.0881L7.82511 12.4922L22.8724 5.17828L22.7961 4.60108C22.7707 4.43617 22.7622 4.27125 22.7622 4.10634C22.7622 1.83878 24.6516 0 26.9816 0C29.3031 0 31.1924 1.83878 31.1924 4.10634C31.1924 6.36565 29.3031 8.20444 26.9816 8.20444C25.8801 8.20444 24.8465 7.8004 24.067 7.05829L23.6349 6.65425L8.56222 13.9929L8.67236 14.5948C8.69778 14.7432 8.70625 14.8999 8.70625 15.0483C8.70625 15.172 8.69778 15.2875 8.68931 15.4029L8.65542 15.9718L23.5332 22.4859L23.9484 22.0654C24.7448 21.2491 25.8293 20.8038 26.99 20.8038C29.3115 20.8038 31.2009 22.6426 31.2009 24.9019C31.1924 27.1612 29.3031 29 26.9816 29Z" fill="black"></path>
+                  </svg>
+
+                  Share
+                </summary>
+                <div id="Product-share-template--16780884967512__main" class="share-button__fallback motion-reduce">
+                  <div class="field">
+                    <span
+                      id="ShareMessage-template--16780884967512__main"
+                      class="share-button__message hidden"
+                      role="status"
+                    >
+                    </span>
+                    <input
+                      type="text"
+                      class="field__input"
+                      id="url"
+                      value="https://www.limelight.pk/products/a0263st-xsl-227"
+                      placeholder="Link"
+                      onclick="this.select();"
+                      readonly=""
+                    >
+                    <label class="field__label" for="url">Link</label>
+                  </div>
+                  <button class="share-button__close hidden no-js-hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon-close"
+                      fill="none"
+                      viewBox="0 0 18 17"
+                    >
+                        <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                      </path>
+                    </svg>
+
+                    <span class="visually-hidden">Close share</span>
+                  </button>
+                  <button class="share-button__copy no-js-hidden">
+                    <svg
+                      class="icon icon-clipboard"
+                      width="11"
+                      height="13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      viewBox="0 0 11 13"
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1a1 1 0 011-1h7a1 1 0 011 1v9a1 1 0 01-1 1V1H2zM1 2a1 1 0 00-1 1v9a1 1 0 001 1h7a1 1 0 001-1V3a1 1 0 00-1-1H1zm0 10V3h7v9H1z" fill="currentColor"></path>
+                    </svg>
+
+                    <span class="visually-hidden">Copy link</span>
+                  </button>
+                </div>
+              </details>
+            </share-button>
+
+            <script
+              src="//www.limelight.pk/cdn/shop/t/222/assets/share.js?v=137220683999880290031725905617"
+              defer="defer"
+            ></script>
+          </div>
+        </div>
+      </div>
+      <div class="swiper swiper-container product-featured-img-main swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-container product-featured-img-main">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+  <div class="swiper-wrapper">
+    {% for media in product.media %}
+      <div class="swiper-slide">
+        <img class="zoomImg" src="{{ media.preview_image | img_url: 'master' }}" alt="">
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-button-next">
+<svg  class="bilal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+  <polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+
+    
+  </div>
+  <div class="swiper-button-prev">
+<svg class="bilal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+  <polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+
+    
+  </div>
+</div>
+          {% comment %}
+<div thumbsSlider="" class="swiper mySwiper">
+<div class="swiper-wrapper">
+ {% for media in product.media %}
+                <div class="swiper-slide">
+                  <img class="zoomImg" src="{{ media.preview_image | img_url: 'master' }}" alt="">
+                </div>
+              {% endfor %}
+</div>
+
+
+  
+</div>
+        {% endcomment %}
+          
+        </div>
+      </div>
+    </div>
+    <div class="product__info-wrapper grid__item">
+      <div id="ProductInfo-template--16780884967512__main" class="product__info-container">
+        <h1 class="product__title">
+          {{ product.title }}
+        </h1>
+       <div class="no-js-hidden product-page-price">
+  <div class="price price--large">
+    <div class="price__regular">
+      <span> RS. {{ product.price }} </span>
+    </div>
+  </div>
+</div>
+<form id="product-form">
+ <div class="size">
+
+<form id="product-form">
+   
+    <!-- Hidden Master Selector (variant ID) -->
+  <select id="SingleOptionSelector-0" class="single-option-selectors single-option-selector-product-template product-form__inputs" data-index="option1" name="id" style="display:none;">
+     {% for variant in product.variants %}
+        <option value="{{ variant.id }}" data-quantity="{{ variant.inventory_quantity }}">
+          {{ variant.title }}
+        </option>
+     {% endfor %}
+</select>
+
+    <!-- Product Options (Size, Color, etc.) -->
+    {%- for option in product.options_with_values -%}
+    <div class="option-name">
+        <label>{{ option.name }}</label>
+    </div>
+    <div class="size-main">
+        {% for value in option.values %}
+        <div class="size-varients">
+            <label for="value-{{ value }}" class="input option-{{ option.name }} option{{ option.position }}">
+                {{ value }}
+            </label>
+            <input type="radio" id="value-{{ value }}" name="options[{{ option.position }}]" value="{{ value }}" {% if forloop.first %} checked {% endif %}>
+        </div>
+        {% endfor %}
+    </div>
+    {%- endfor -%}
+
+    <!-- Quantity Input -->
+  {% comment %}
+    <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+
+    <!-- Add to Cart Button -->
+   {% endcomment %}
+</form>
+</div>
+  <div class="product-form__input product-form__quantity">
+    <label class="form__label  " for="Quantity-template">Quantity</label>
+    <quantity-input class="quantity">
+      <button class="quantity__button no-js-hidden" name="minus" type="button">
+        <span class="visually"
+         
+</span>
+         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" fill="none" viewBox="0 0 10 2">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1C0.5 0.7 0.7 0.5 1 0.5h8a0.5 0.5 0 1 1 0 1H1A0.5 0.5 0 0 1 0.5 1z" fill="#000000"></path>
+</svg>
+       
+
+      </button>
+      <input class="quantity__input  option{{ option.position }} " type="number" name="quantity" id="quantity" min="1" max="10" value="1" readonly>
+      <button class="quantity__button no-js-hidden" name="plus" type="button">
+        <span class="visually">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" width="20" height="20"  class="icon icon-plus" fill="none" viewBox="0 0 10 10">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5v3.5a.5.5 0 001 0v-3.5h3.5a.5.5 0 000-1H5.5V1a.5.5 0 00-1 0v3.5H1z" fill="#000000"></path>
+</svg></span>
+       
+
+      </button>
+    </quantity-input>
+  </div>
+
+ 
+  
+{% assign custom_url = product.metafields.custom.custom.dummy %}
+
+<p>Debug URL: {{ custom_url }}</p>  <!-- Debug output -->
+
+{% if custom_url != blank %}
+    <a href="{{ custom_url | prepend: 'http://' }}" target="_blank">
+        Visit Custom Stitched URL
+    </a>
+{% else %}
+    <p>No URL available.</p>
+{% endif %}
+
+
+
+  <div class="product-form-main">
+    <div class="product-form__buttons product-form__buttons_fixed">
+      
+       <button  id="add-to-cart" data-product-id="{{ product.id }}" type="button" class="product-form__submit button button--full-width button--primary btn">Add to cart</button>
+    </div>
+  </div>
+</form>
+        </div>
+        <div class="product__accordion accordion cstm-care-main">
+          <details>
+            <summary>
+              <div class="summary__title">
+                <h2 class="h4 accordion__title">Care Instructions</h2>
+              </div>
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                </path>
+              </svg>
+            </summary>
+            <div class="accordion__content rte">
+              Wash light and bright colors separately. Do not bleach. Do not twist/wring, warm iron to sequined, beaded,
+              and delicate fabrics. Do not dry in direct sunlight.
+            </div>
+          </details>
+        </div>
+        <div class="product__accordion accordion cstm-care-main">
+          <details>
+            <summary>
+              <div class="summary__title">
+                <h2 class="h4 accordion__title">Disclaimer</h2>
+              </div>
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                </path>
+              </svg>
+            </summary>
+            <div class="accordion__content rte">
+              Actual colors of the product may vary from the colors being displayed on your device.
+            </div>
+          </details>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+<form id="product-form">
+  <label for="option1">Color:</label>
+  <select id="option1">
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+  </select>
+
+  <label for="option2">Size:</label>
+  <select id="option2">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+  </select>
+
+  <label for="option3">Material:</label>
+  <select id="option3">
+    <option value="Cotton">Cotton</option>
+    <option value="Polyester">Polyester</option>
+  </select>
+
+  <button type="button" id="add-to-cart">Add to Cart</button>
+</form>
+{% endcomment %}
+  
+
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Initialize Swiper for the main image slider
+  var mainSwiper = new Swiper('.mySwiper2', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true, // Enable loop if desired
+  });
+
+  // Get all secondary images
+  const secondaryImages = document.querySelectorAll('.product-secondary-img');
+
+  // Add click event listener to each secondary image
+  secondaryImages.forEach(function(image) {
+    image.addEventListener('click', function() {
+      // Get the index of the clicked image
+      const imageIndex = this.getAttribute('data-index');
+      
+      // Move the Swiper slider to the corresponding slide
+      mainSwiper.slideTo(parseInt(imageIndex), 500); // 500ms transition time
+    });
+  });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const quantityInput = document.getElementById("Quantity-template");
+  const plusButtons = document.querySelectorAll('button[name="plus"]');
+  const minusButtons = document.querySelectorAll('button[name="minus"]');
+
+  // Attach event listener to all plus buttons
+  plusButtons.forEach(plusButton => {
+    plusButton.addEventListener("click", function() {
+      let currentQuantity = parseInt(quantityInput.value);
+      if (currentQuantity < 10) { // Ensure the maximum is 10
+        quantityInput.value = currentQuantity + 1; // Increase quantity
+      }
+    });
+  });
+
+  // Attach event listener to all minus buttons
+  minusButtons.forEach(minusButton => {
+    minusButton.addEventListener("click", function() {
+      let currentQuantity = parseInt(quantityInput.value);
+      if (currentQuantity > 1) { // Ensure the minimum is 1
+        quantityInput.value = currentQuantity - 1; // Decrease quantity
+      }
+    });
+  });
+});
+
+
+
+// api
+
+
+// document.getElementById('add-to-cart').addEventListener('click', function() {
+//   // Get selected size (radio buttons)
+//   let selectedSize = document.querySelector('input[name="options[Size]"]:checked').value;
+
+//   // Get selected color (assuming similar input for color, adjust if needed)
+//   let selectedColor = document.querySelector('input[name="options[Color]"]:checked').value;
+
+//   // Get the quantity
+//   let quantity = document.getElementById('Quantity-template').value;
+
+//   // Product ID (assuming it is stored in the data attribute)
+//   let productId = this.getAttribute('data-product-id');
+
+//   // API payload
+//   let payload = {
+//     product_id: productId,
+//     size: selectedSize,
+//     color: selectedColor,
+//     quantity: quantity
+//   };
+
+//   // Make API request to add to cart
+//   fetch('/cart/add.js', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(payload)
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     // Show success popup or alert
+//     alert('Product added to cart successfully!');
+//   })
+//   .catch(error => {
+//     console.error('Error adding product to cart:', error);
+//     alert('Failed to add product to cart.');
+//   });
+// });
+
+  
+   
+
+
+
+
+
+// document.getElementById('add-to-cart').addEventListener('click', function () {
+//     // Get the selected options
+//     const option1 = document.querySelector('input[name="options[1]"]:checked');
+//     const option2 = document.querySelector('input[name="options[2]"]:checked');
+//     const option3 = document.querySelector('input[name="options[3]"]:checked');
+//     const qty = document.querySelector('.quantity__input');
+    
+  
+//     // Prepare variables to hold the selected values
+//     let option1Value, option2Value, option3Value;
+
+//     // Get the values of the selected options (if they are available)
+//     if (option1) option1Value = option1.value; // Size
+//     if (option2) option2Value = option2.value; // Color
+//     if (option3) option3Value = parseInt(option3.value, 10); // Quantity
+
+//     // Log the selected options for debugging
+//     console.log('Selected Option 1 (Size):', option1Value);
+//     console.log('Selected Option 2 (Color):', option2Value);
+//     console.log('Selected Option 3 (Quantity):', option3Value);
+
+//     // Assuming the variant data is available
+//     const variants = [
+//         { id: 1234567890, option1: 'Small', option2: 'Purple' },
+//         { id: 1234567891, option1: 'Medium', option2: 'Purple' },
+//         { id: 1234567892, option1: 'Large', option2: 'Purple' },
+//         { id: 1234567893, option1: 'Small', option2: 'Green' },
+//         { id: 1234567894, option1: 'Medium', option2: 'Green' },
+//         { id: 1234567895, option1: 'Large', option2: 'Green' },
+//         // Add more variants as necessary
+//     ];
+
+//     let selectedVariant;
+
+//     // Find the variant that matches the selected options
+//     if (option1Value && option2Value) {
+//         selectedVariant = variants.find(variant =>
+//             variant.option1 === option1Value && variant.option2 === option2Value && varient.option3Value
+//         );
+//     }
+
+//     // Log the selected variant for debugging
+//     console.log('Selected Variant:', selectedVariant);
+
+//     // If a variant is found, proceed with adding it to the cart
+//     if (selectedVariant) {
+//         addToCart(selectedVariant.id, option3Value || 1); // Default to quantity 1 if not provided
+//     } else {
+//         alert('This combination is not available.');
+//     }
+// });
+
+// // Function to add the selected variant to the cart
+// function addToCart(variantId, quantity = 1) {
+//     fetch('/cart/add.js', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             id: variantId,
+//             quantity: quantity
+//         })
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log('Product added to cart:', data);
+//         // Redirect to the cart page
+//         window.location.href = '/cart';
+//     })
+//     .catch(error => {
+//         console.error('Error adding product to cart:', error);
+//         alert('Failed to add product to cart.');
+//     });
+// }
+
+// ya wala code use hura hy!
+
+// document.querySelectorAll('input[name^="options"]').forEach((input) => {
+//     input.addEventListener('change', function () {
+//         updateMasterSelector();
+//     });
+// });
+
+// function updateMasterSelector() {
+//     const selectedOptions = [];
+
+//     // Gather selected options
+//     document.querySelectorAll('input[name^="options"]:checked').forEach((selectedInput) => {
+//         selectedOptions.push(selectedInput.value);
+//     });
+
+//     // Find the matching variant based on selected options
+//     const selectElement = document.getElementById('SingleOptionSelector-0');
+//     let selectedVariantId = null;
+
+//     Array.from(selectElement.options).forEach(option => {
+//         const variant = option.text.split(' / '); // Assuming variant titles are in format like 'Size / Color'
+        
+//         // Check if selected options match the variant options
+//         if (JSON.stringify(variant) === JSON.stringify(selectedOptions)) {
+//             selectedVariantId = option.value;
+//         }
+//     });
+
+//     if (selectedVariantId) {
+//         // Set the selected variant ID in the hidden master selector
+//         selectElement.value = selectedVariantId;
+//     }
+// }
+
+// // Handle Add to Cart
+// document.getElementById('add-to-cart').addEventListener('click', function () {
+//     // Get the selected variant ID from the hidden select element
+//     const selectedVariantId = document.getElementById('SingleOptionSelector-0').value;
+    
+//     // Get the quantity
+//     const quantity = document.getElementById('quantity').value;
+
+//     // Proceed to add to cart
+//     addToCart(selectedVariantId, quantity);
+// });
+
+// // Function to add the selected variant to the cart
+// function addToCart(variantId, quantity = 1) {
+//     fetch('/cart/add.js', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             id: variantId, // Use the selected variant ID
+//             quantity: quantity
+//         })
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log('Product added to cart:', data);
+//         // Optionally redirect to the cart page
+//         window.location.href = '/cart';
+//     })
+//     .catch(error => {
+//         console.error('Error adding product to cart:', error);
+//         alert('Failed to add product to cart.');
+//     });
+// }
+
+
+
+   
+
+// 2ndcode
+document.querySelectorAll('input[name^="options"]').forEach((input) => {
+    input.addEventListener('change', function () {
+        updateMasterSelector();
+    });
+});
+
+function updateMasterSelector() {
+    const selectedOptions = [];
+
+    // Gather selected options
+    document.querySelectorAll('input[name^="options"]:checked').forEach((selectedInput) => {
+        selectedOptions.push(selectedInput.value);
+    });
+
+    // Find the matching variant based on selected options
+    const selectElement = document.getElementById('SingleOptionSelector-0');
+    let selectedVariantId = null;
+    let selectedVariantQuantity = null;
+
+    Array.from(selectElement.options).forEach(option => {
+        const variant = option.text.split(' / '); // Assuming variant titles are in format like 'Size / Color'
+        
+        // Check if selected options match the variant options
+        if (JSON.stringify(variant) === JSON.stringify(selectedOptions)) {
+            selectedVariantId = option.value;
+            selectedVariantQuantity = parseInt(option.getAttribute('data-quantity'), 10); // Get variant quantity
+        }
+    });
+
+    if (selectedVariantId) {
+        // Set the selected variant ID in the hidden master selector
+        selectElement.value = selectedVariantId;
+
+        // Check if the selected variant is sold out (quantity is 0)
+        const addToCartButton = document.getElementById('add-to-cart');
+        if (selectedVariantQuantity === 0) {
+            // Disable the button and show "Sold Out"
+            addToCartButton.disabled = true;
+            addToCartButton.textContent = 'Sold Out';
+        } else {
+            // Enable the button if there's stock available
+            addToCartButton.disabled = false;
+            addToCartButton.textContent = 'Add to Cart';
+        }
+    }
+}
+
+// Handle Add to Cart
+document.getElementById('add-to-cart').addEventListener('click', function () {
+    // Get the selected variant ID from the hidden select element
+    const selectedVariantId = document.getElementById('SingleOptionSelector-0').value;
+    
+    // Get the quantity
+    const quantity = document.getElementById('quantity').value;
+
+    // Proceed to add to cart
+    addToCart(selectedVariantId, quantity);
+});
+
+// Function to add the selected variant to the cart
+function addToCart(variantId, quantity = 1) {
+    fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            id: variantId, // Use the selected variant ID
+            quantity: quantity
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Product added to cart:', data);
+        // Optionally redirect to the cart page
+        window.location.href = '/cart';
+    })
+    .catch(error => {
+        console.error('Error adding product to cart:', error);
+        alert('Failed to add product to cart.');
+    });
+}
+
+
+
+
+
+
+
+
+   
+
+   
+  </script>
+  
+{% schema %}
+{
+  "name": "Products Slider",
+  "settings": [],
+
+  "blocks": [
+
+    {
+      "type": "image_product",
+      "name": "Product Images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_product",
+          "label": "Product Images"
+        }
+      ]
+    },
+    {
+      "type": "image_slider",
+      "name": "image_slider",
+      "settings": [
+        {
+          "type": "image_picker",
+           "id": "image_with_slider",
+          "label": "Slider Images"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Products Slider"
+    }
+  ]
+}
+{% endschema %}

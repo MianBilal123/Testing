@@ -1,0 +1,36 @@
+<div class="cutom-section">
+  {% if section.settings.view_text %}
+    <center>
+      <P>{{ section.settings.custom_text }}</P>
+    </center>
+  {% endif %}
+  {% if section.settings.myimage %}
+    <img src="{{ section.settings.myimage | image_url: "600x" }}">
+  {% endif %}
+</div>
+{% schema %}
+{
+  "name": "Section name",
+  "settings": [
+  {
+    "type": "checkbox",
+    "id": "view_text",
+    "label": "Enabel Text",
+    "default":false
+  },
+    {
+      "type": "text",
+      "id": "custom_text",
+      "label": "Bilal is here"
+    },
+    {
+      "type": "image_picker",
+      "id": "myimage",
+      "label": "select Image"
+    }
+
+
+
+  ]
+}
+{% endschema %}

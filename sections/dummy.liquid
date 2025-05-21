@@ -1,0 +1,536 @@
+<style>
+                                                        .main_header {
+                                                          position: relative;
+                                                          z-index: 15;
+                                                          background: #fff;
+                                                          border: 1px solid #dddddd;
+                                                      }
+                                                      header.site_header {
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        margin: 0 auto;
+                                                    }
+                                                      header.site_header {
+                                                        position: relative;
+                                                        min-height: 90px;
+                                                        width: 100%;
+                                                        padding-left: 15px;
+                                                        padding-right: 15px;
+                                                        max-widh:1400px;
+                                                    }
+                                                    header.site_header {
+                                                         top: 15px;
+
+                                                  }
+                                                    .site_header h1.header-logo {
+                                                      flex: 1;
+                                                  }h1.header-logo {
+                                               margin: -22px;
+                                                  min-width: 170px;
+                                                    max-width: 210px;
+                                            }
+                                               .header-logo img {
+
+                                                    margin-left: 40px;
+                                                      width: 65%;
+                                                          height: 82%;
+                                                        }
+                                                 .textblock {
+                                                    color: #000;
+                                                    flex: 1;
+
+                                                }
+                                                  form.search-header.search {
+                                                    position: relative;
+                                                    margin: 0;
+                                                }
+                                                 .input-group {
+                          padding-left: 20px;
+                          padding-top: 18px;
+                          position: relative;
+                          display: table;
+                          width: 120%;
+                          border-collapse: separate;
+                      }
+                                                  input.input_field {
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                    width: 100%;
+                                                    display: table-cell;
+                                                    margin: 0;
+                                                }
+                                            input, textarea, select {
+                                              color: #000;
+                                              font-size: 18px;
+                                              font-family: var(--ft1);
+                                              margin-bottom: 15px;
+                                              max-width: 100%;
+                                              line-height: 1.2;
+                                              padding: 8px 15px;
+                                              border: 1px solid #dddddd;
+                                              background-color: #fff;
+                                          }
+                                            span.input-group__btn {
+                                              display: table-cell;
+                                              white-space: nowrap;
+                                              vertical-align: middle;
+                                              margin: 0;
+                                              border-collapse: separate;
+                                          }
+                                          btn {
+                                            font-family: var(--ft1);
+                                            font-weight: 700;
+                                            border: 1px solid #000;
+                                            background-color: #000;
+                                            color: #fff;
+                                            text-transform: uppercase;
+                                            display: inline-block;
+                                            width: auto;
+                                            text-decoration: none;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            cursor: pointer;
+                                            line-height: 1;
+                                            transition: all .3s ease-in-out;
+                                            font-size: 15px;
+                                            padding: 10px 24px;
+                                            -moz-user-select: none;
+                                            -ms-user-select: none;
+                                            -webkit-user-select: none;
+                                            user-select: none;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            border-radius: 0;
+                                            letter-spacing: 1px;
+                                        }
+                                          .btn {
+                                            width: 61px;
+                                            background: black;
+                                            margin-left: 10px;
+                                            height: 38px;
+                                            padding-top: 0;
+                                            padding-bottom: 0;
+                                        }
+                                        button {
+                                          cursor: pointer;
+                                      }
+                                        .at {
+                                          font: normal normal normal 15px / 1 Adorn-Icons;
+                                          speak: none;
+                                          text-transform: none;
+                                          display: inline-block;
+                                          vertical-align: middle;
+                                          text-rendering: auto;
+                                          -webkit-font-smoothing: antialiased;
+                                      }
+                                      span.icon__fallback-text {
+                                        display: none;
+                                    }
+                                   .at-search-l:before {
+                                    color: white;
+                                    content: "\ebf3";
+                                }
+
+                               .icon-field {
+
+                                 padding-right: 13px;
+                                  padding-top: 20px;
+                                gap: 15px;
+                                display: flex;
+                                justify-content: flex-end;
+                                width: 20%;
+                                max-width: 200px;
+                                row-gap: 20px;
+                                row-gap: 20px;
+                                flex-wrap: wrap;
+                            }
+                           a.hdrHelp {
+                            margin-top: -7px;
+                            font-size: 18px;
+                            color: black;
+                            text-decoration: none;
+                            padding: 0 10px;
+                        }
+
+                    .shopify_section {
+                      margin-top:15px;
+                        border-top: 1px solid rgba(0, 0, 0, 0);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0);
+                        background-color: #fff;
+                        width: 100%;
+                    }
+                      ul.nav_list {
+                        border-bottom: 1px solid #000;
+                        margin-top: 15px;
+                        font-weight: 600;
+                        letter-spacing: 0.1rem;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 11px;
+                        display: flex;
+                        list-style: none;
+                        gap: 15px;
+                        /* justify-content: center; */
+                    }
+                      li.list_child a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                      li {
+                              list-style-type: none;
+                          }
+
+                          li:hover {
+                              text-decoration: underline;
+                              cursor: pointer;
+                          }
+                  .mobile-view{
+                    display:none;
+
+                  }
+                   @media only screen and (max-width: 768px) {
+                  .desktop-view{
+                    display:none
+                  }
+                     .mobile-view {
+            display: block;
+            margin-bottom: 10px;
+        }
+                     .main_header{
+                       border:none;
+    }
+                     header.site_header {
+                    min-height: 70px;
+                }
+
+              h1.header-logo {
+                  margin-top: -22px;
+                  margin-left: 60px;
+              }
+                     .header-logo img {
+                  position: relative;
+                  margin-top: -17px;
+                  height: 100px;
+                  max-width: 100px;
+              }
+
+                     .icon-field {
+                  padding-right: 0px;
+                  padding-top: 0px;
+                  gap: 15px;
+                  display: flex;
+                  justify-content: flex-end;
+                  width: 20%;
+                  max-width: 200px;
+                  row-gap: 20px;
+                  row-gap: 20px;
+                  flex-wrap: wrap;
+              }
+            .mobile-nav.hide-lg {
+                gap: 10px;
+                display: flex;
+            }
+                     span {
+                color: black;
+            }
+                     a.hdicon.js-mobile-nav-toggle.open {
+                text-decoration: none;
+                color: black;
+            }
+                     a.hdicon.searchIco {
+                padding-top: 3px;
+            }
+                     .mobile-nav-wrapper.active {
+              left: 0;
+              opacity: 1;
+              visibility: visible;
+          }
+                     .mobile-nav-wrapper {
+              width: 270px;
+              height: 100%;
+              position: fixed;
+              left: -270px;
+              top: 0;
+              z-index: 999;
+              background-color: #fff;
+              box-shadow: 0 0 5px #0000004d;
+              opacity: 0;
+              visibility: hidden;
+              transition: all .3s ease-in-out;
+          }
+                     .closemmn {
+              color: #000;
+              background-color: #eee;
+              position: absolute;
+              /* top: 15px; */
+              right: -50px;
+              cursor: pointer;
+              width: 50px;
+              height: 50px;
+          }
+                     .f-aic {
+              align-items: center;
+          }
+                     .f-jcc {
+              justify-content: center;
+          }
+                     .fl, .flex {
+              display: flex;
+          }
+                     .at {
+              font: normal normal normal 15px / 1 Adorn-Icons;
+              speak: none;
+              text-transform: none;
+              display: inline-block;
+              vertical-align: middle;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+          }
+
+                     .at-times-r:before {
+                       display:none
+              content: "\eb41";
+          }
+                     *, ::after, ::before {
+              box-sizing: border-box;
+          }
+        #MobileNav {
+            height: calc(100% - 36px);
+            padding-bottom: 10px;
+            overflow: auto;
+        }
+                     ul {
+            margin: 0;
+            padding: 0;
+        }
+                     .mobile-nav-wrapper.active {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+                     .mobile-nav-wrapper {
+            width: 270px;
+            height: 100%;
+            position: fixed;
+            left: -270px;
+            top: 0;
+            z-index: 999;
+            background-color: #fff;
+            box-shadow: 0 0 5px #0000004d;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+        }
+                     #MobileNav li {
+            border-top: 1px solid #dddddd;
+            position: relative;
+        }
+                     li {
+            list-style: none;
+        }
+                     #MobileNav li a {
+            color: #000;
+            font-size: 15px;
+            text-decoration: none;
+            min-height: 50px;
+            padding: 5px 0 5px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            opacity: 1;
+            font-weight: 400;
+            letter-spacing: .05em;
+            text-transform: none;
+        }
+
+      a.closebtn {
+        text-decoration: none;
+          color: black;
+          font-size: 30px;
+      }
+                     span.side-span {
+      color: black;
+  }
+
+
+                   }
+</style>
+
+<script>
+    //     function closeNav() {
+    //     document.getElementById("mySidenav").style.width = "0";
+    //   }
+    // function openNav(){
+    //   document.getElementById("mySidenav").style.width ="270px";
+    // }
+    function openNav() {
+      // Show the sidenav and close button
+      document.getElementById("mySidenav").classList.add("active");
+      document.getElementById("closemmn").style.display = "flex";  // Show the close button
+  }
+
+  function closeNav() {
+      // Hide the sidenav and close button
+      document.getElementById("mySidenav").classList.remove("active");
+      document.getElementById("closemmn").style.display = "none";  // Hide the close button
+  }
+</script>
+
+<div class="main_header  main_navbar desktop-view">
+  <header class="site_header">
+    <h1 class="header-logo">
+      <a href="/" class="site-logo">
+        <img src="{{ section.settings.image_with_text_image | img_url: 'medium' }}" alt="">
+      </a>
+    </h1>
+
+    <div class="textblock">
+      <form class="search-header  search" action="" method="get">
+        <div class="input-group">
+          <input class="input_field" type="search" placeholder="Search for products, brands and more">
+          <span class="input-group__btn"
+            ><button class="btn search__submit" type="submit" style="margin-left: 10px;">
+              <i class="at at-search-l"></i> <span class="icon__fallback-text">Submit</span>
+            </button></span
+          >
+        </div>
+      </form>
+    </div>
+    <div class="icon-field">
+      <a href="" class="hdrHelp">Help</a>
+      <a href="" class="hdicon site-settings" title="Settings">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 24" fill="none">
+          <path d="M11.5885 16.3462C14.8713 16.3462 17.5325 13.0022 17.5325 8.8772C17.5325 4.75219 14.8713 1.4082 11.5885 1.4082C8.30575 1.4082 5.64453 4.75219 5.64453 8.8772C5.64453 13.0022 8.30575 16.3462 11.5885 16.3462Z" stroke="#1A1818" stroke-miterlimit="10"></path>
+          <path d="M7.62946 15.0527C7.62946 15.0527 3.28245 17.0327 1.91245 19.3197C1.12691 20.4274 0.749509 21.7731 0.844458 23.1277L13.1155 23.2077" stroke="#1A1818" stroke-miterlimit="10"></path>
+          <path d="M14.7664 15.0527C14.7664 15.0527 19.1084 17.0327 20.4794 19.3197C21.2677 20.4261 21.6454 21.7728 21.5474 23.1277L9.27637 23.2077" stroke="#1A1818" stroke-miterlimit="10"></path>
+        </svg>
+      </a>
+      <a href="" class="hdicon wishlist hide-sm hide-md" title="Wishlist">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="20" viewBox="0 0 48 48">
+          <path d="M 15 7 C 8.9424416 7 4 11.942442 4 18 C 4 22.096154 7.0876448 25.952899 10.851562 29.908203 C 14.615481 33.863507 19.248379 37.869472 22.939453 41.560547 A 1.50015 1.50015 0 0 0 25.060547 41.560547 C 28.751621 37.869472 33.384518 33.863507 37.148438 29.908203 C 40.912356 25.952899 44 22.096154 44 18 C 44 11.942442 39.057558 7 33 7 C 29.523564 7 26.496821 8.8664883 24 12.037109 C 21.503179 8.8664883 18.476436 7 15 7 z M 15 10 C 17.928571 10 20.3663 11.558399 22.732422 15.300781 A 1.50015 1.50015 0 0 0 25.267578 15.300781 C 27.6337 11.558399 30.071429 10 33 10 C 37.436442 10 41 13.563558 41 18 C 41 20.403846 38.587644 24.047101 34.976562 27.841797 C 31.68359 31.30221 27.590312 34.917453 24 38.417969 C 20.409688 34.917453 16.31641 31.30221 13.023438 27.841797 C 9.4123552 24.047101 7 20.403846 7 18 C 7 13.563558 10.563558 10 15 10 z"></path>
+        </svg>
+      </a>
+      <a href="" id="cartLink" class="hdicon header-cart" title="Cart" role="button" aria-haspopup="dialog">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="icon icon-cart"
+          viewBox="0 0 25 25 "
+          width="23"
+          height="20"
+        >
+          <path d="M5.058 23a2 2 0 1 0 4.001-.001A2 2 0 0 0 5.058 23zm12.079 0c0 1.104.896 2 2 2s1.942-.896 1.942-2-.838-2-1.942-2-2 .896-2 2zM0 1a1 1 0 0 0 1 1h1.078l.894 3.341L5.058 13c0 .072.034.134.042.204l-1.018 4.58A.997.997 0 0 0 5.058 19h16.71a1 1 0 0 0 0-2H6.306l.458-2.061c.1.017.19.061.294.061h12.31c1.104 0 1.712-.218 2.244-1.5l3.248-6.964C25.423 4.75 24.186 4 23.079 4H5.058c-.157 0-.292.054-.438.088L3.844.772A1 1 0 0 0 2.87 0H1a1 1 0 0 0-1 1zm5.098 5H22.93l-3.192 6.798c-.038.086-.07.147-.094.19-.067.006-.113.012-.277.012H7.058v-.198l-.038-.195L5.098 6z"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="shopify_section desktop-nav ">
+    <ul class="nav_list">
+      {% for link in section.settings.menu.links %}
+        <li class="list_child">
+          <a href="{{ link.url }}">{{ link.title }} |</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- MOBILE VIEW -->
+
+<div class="main_header  main_navbar mobile-view">
+  <header class="site_header">
+    <div class="mobile-nav hide-lg">
+      <a href="#" class="hdicon js-mobile-nav-toggle open" title="Menu">
+        <span class="side-span" style="font-size:15px;cursor:pointer" onclick="openNav()">☰ </span>
+      </a>
+      <a href="/search" class="hdicon searchIco" title="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50">
+          <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+        </svg>
+      </a>
+    </div>
+    <h1 class="header-logo">
+      <a href="/" class="site-logo">
+        <img src="{{ section.settings.image_with_text_image | img_url: 'medium' }}" alt="">
+      </a>
+    </h1>
+
+    <div class="icon-field">
+      <a href="" class="hdicon site-settings" title="Settings">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 23 24" fill="none">
+          <path d="M11.5885 16.3462C14.8713 16.3462 17.5325 13.0022 17.5325 8.8772C17.5325 4.75219 14.8713 1.4082 11.5885 1.4082C8.30575 1.4082 5.64453 4.75219 5.64453 8.8772C5.64453 13.0022 8.30575 16.3462 11.5885 16.3462Z" stroke="#1A1818" stroke-miterlimit="10"></path>
+          <path d="M7.62946 15.0527C7.62946 15.0527 3.28245 17.0327 1.91245 19.3197C1.12691 20.4274 0.749509 21.7731 0.844458 23.1277L13.1155 23.2077" stroke="#1A1818" stroke-miterlimit="10"></path>
+          <path d="M14.7664 15.0527C14.7664 15.0527 19.1084 17.0327 20.4794 19.3197C21.2677 20.4261 21.6454 21.7728 21.5474 23.1277L9.27637 23.2077" stroke="#1A1818" stroke-miterlimit="10"></path>
+        </svg>
+      </a>
+
+      <a href="" id="cartLink" class="hdicon header-cart" title="Cart" role="button" aria-haspopup="dialog">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="icon icon-cart"
+          viewBox="0 0 25 25 "
+          width="18"
+          height="18"
+        >
+          <path d="M5.058 23a2 2 0 1 0 4.001-.001A2 2 0 0 0 5.058 23zm12.079 0c0 1.104.896 2 2 2s1.942-.896 1.942-2-.838-2-1.942-2-2 .896-2 2zM0 1a1 1 0 0 0 1 1h1.078l.894 3.341L5.058 13c0 .072.034.134.042.204l-1.018 4.58A.997.997 0 0 0 5.058 19h16.71a1 1 0 0 0 0-2H6.306l.458-2.061c.1.017.19.061.294.061h12.31c1.104 0 1.712-.218 2.244-1.5l3.248-6.964C25.423 4.75 24.186 4 23.079 4H5.058c-.157 0-.292.054-.438.088L3.844.772A1 1 0 0 0 2.87 0H1a1 1 0 0 0-1 1zm5.098 5H22.93l-3.192 6.798c-.038.086-.07.147-.094.19-.067.006-.113.012-.277.012H7.058v-.198l-.038-.195L5.098 6z"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav mobile-nav-wrapper hide-lg" role="navigation">
+    <div id="closemmn" class="closemmn fl f-aic f-jcc" title="Close Menu" style="display: none;">
+      <i class="at at-times-r" aria-hidden="true">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      </i>
+    </div>
+    <ul id="MobileNav" class="mobile-nav siteNavigation">
+      {% for link in section.settings.menu.links %}
+        <li class="lvl1">
+          <a href="{{ link.url }}">{{ link.title }} </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "navbar",
+  "settings": [
+        {
+    "type": "text",
+    "id": "text_id",
+    "label": "enter your text"
+
+        },
+    {
+  "type": "link_list",
+  "id": "menu",
+  "label": "Menu"
+},
+    {
+  "type": "image_picker",
+  "id": "image_with_text_image",
+  "label": "Image"
+},
+
+
+
+
+  ],
+  "presets": [
+    {
+     "name": "Navbar ",
+
+
+    }
+  ]
+}
+{% endschema %}

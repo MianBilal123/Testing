@@ -1,0 +1,113 @@
+<style>
+ .grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  .custom-block.style1.page-width {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+  .sizesSelector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+  }
+  .sizesSelector a {
+      text-decoration: none;
+      font-size: 80px;
+      color: #fff;
+      background-color: #000;
+      padding: 20px;
+      line-height: 1em;
+      width: 80px;
+      text-align: center;
+      flex: 1;
+      font-weight: 600;
+  }
+  @media (max-width: 768px) {
+      .sizesSelector a {
+          flex: 1 1 30%;
+      }
+  }
+</style>
+
+<div class="custom-block style1 page-width">
+  <div
+    class="custom-content sidespace grid gspace f-ais"
+    
+  >
+    <div class="custom__item gitem ci-text_MzPCXf block_type_text wd100 wd100 f-asc">
+      <div
+        class="ct-inner of_hidden ct-inner-text wow fadeIn"
+      
+      
+      >
+        <div class="tc f-asc">
+          <div class="custom-text">
+              <h2>{{ section.settings.title }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom__item gitem ci-liquid_rnDTti block_type_liquid wd100 wd100 f-asc">
+      <div
+        class="ct-inner of_hidden ct-inner-liquid wow fadeIn"
+       
+      >
+        <div class="sizesSelector">
+          {% for size in section.blocks %}
+            <a href="{{ size.settings.link }}" class="size">{{ size.settings.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shoe Size Selector",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop by Shoe Size"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "size",
+      "name": "Shoe Size",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Shoe Size Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shoe Size Selector"
+    }
+  ]
+}
+{% endschema %}

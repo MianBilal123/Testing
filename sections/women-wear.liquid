@@ -1,0 +1,166 @@
+<style>
+          .circular-collection-container {
+              margin: 0 auto;
+              width: 94%;
+          }
+
+            .circular-collection-wrapper {
+              padding: 2rem 0;
+          }
+
+          .circular-collection-grid {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              width: 70%;
+              margin: 0 auto;
+          }
+
+
+          .circular-collection-item {
+              flex: 0 0 21%;
+              align-items: stretch;
+              display: flex;
+              margin-bottom: 1rem;
+              padding-left: 2rem;
+              padding-right: 2rem;
+              flex-flow: column;
+              align-self: stretch;
+          }
+
+            circular-collection-media {
+              display: block;
+              flex: 1 1 100%;
+              text-decoration: none;
+          }
+    h1.text-center{
+  font-size:15px !important;
+    }
+
+          .circular-collection-circle {
+              position: relative;
+              overflow: hidden;
+          }
+
+                border-radius: 50%;
+              max-width: 100%;
+          }
+
+            .circular-collection-title h1 {
+              font-size: 2rem;
+              font-weight: 500;
+              font-family: VisbyCF-Medium;
+              margin: 0 auto 5px;
+              max-width: 150px;
+              line-height: 19px;
+          }
+
+        .circular-collection-wrapper-line {
+            height: 4px;
+            background-color: #e7dfd6;
+            margin: 0 auto;
+        }
+
+      img.border {
+          max-width: 100%;
+          border-radius: 50%;
+      }
+      h1.text-center {
+          font-size: 24px;
+          text-align: center;
+          text-transform: capitalize;
+      }
+      circular-collection-wrapper-line last-child{
+        display bl
+      }
+    @media only screen and (max-width: 768px) {
+     .circular-collection-heading {
+        font-size: 20px;
+        left: 13%;
+        padding-top: 10px;
+    }
+
+
+    h1.text-center {
+        font-size: 10px;
+    }
+      .circular-collection-grid {
+        width: 100%;
+        margin: 0 auto;
+    }
+      .circular-collection-item {
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+
+      .circular-collection-container {
+        width: 100%;
+    }
+    }
+</style>
+
+<div class="circular-collection-container">
+  <div class="circular-collection-wrapper">
+    <div class="circular-collection-grid">
+      {% for block in section.blocks %}
+        <div class="circular-collection-item">
+          <a class="circular-collection-media">
+            <div class="circular-collection-circle">
+              <img class="border" src="{{block.settings.card_img | img_url: 'medium' }}" alt="">
+            </div>
+
+            <div class="circular-collection-title">
+              <h1 class="text-center">
+                {{ block.settings.img_titel }}
+              </h1>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="circular-collection-wrapper-line last-child"></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "lime cards",
+    "settings": [],
+    "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+
+
+      {
+       "type": "image_picker",
+  "id": "card_img",
+  "label": "whatsapp img"
+      },
+      {
+"type": "text",
+"id":"img_titel",
+  "label":"img titel"
+
+
+
+      }
+
+
+      ]
+    }
+  ],
+      "presets": [
+    {
+      "name": "lime cards",
+
+    }
+  ]
+
+
+
+
+  }
+{% endschema %}

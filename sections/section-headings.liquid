@@ -1,0 +1,55 @@
+<style>
+           h2 {
+
+             text-transform: capitalize;
+             font-size: 30px;
+             text-align: center;
+             font-weight: 700;
+         }
+     p.our-brand {
+        color: black;
+        text-align: center !important;
+    }
+        @media only screen and (max-width: 768px) {
+
+    p.our-brand {
+      text-align: center !important;
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+        }
+</style>
+
+<h2>{{ section.settings.heading_text }}</h2>
+<P class="our-brand">{{ section.settings.paragraph_text }}</P>
+{% schema %}
+{
+  "name": "headings",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "This is the default heading"
+    },
+    {
+      "type": "text",
+      "id": "paragraph_text",
+      "label": "Paragraph",
+      "default":"para default"
+
+    }
+
+  ],
+   "presets": [
+    {
+     "name": "heading ",
+      "category": "paragraph"
+
+
+    }
+  ]
+}
+{% endschema %}

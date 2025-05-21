@@ -1,0 +1,31 @@
+<div class="circular-collection-heading">
+  <a href="https://www.limelight.pk/collections/pret">
+    <h1 class="circular-collection-heading">
+      {{ section.settings.heading_text }}
+    </h1>
+  </a>
+</div
+
+
+{% schema %}
+  {
+    "name": "lim heading",
+    "settings": [
+
+ {
+  "type": "text",
+  "id":   "heading_text",
+  "label":"Heading text"
+}
+
+    ],
+
+    "presets": [
+ {
+      "name": "lim heading",
+
+    }
+
+    ]
+  }
+{% endschema %}
