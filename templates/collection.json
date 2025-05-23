@@ -94,6 +94,11 @@
       "settings": {
         "paginte_product": "5"
       }
+    },
+    "collection_cart_popup_bnQMaB": {
+      "type": "collection-cart-popup",
+      "name": "Simple Popup",
+      "settings": {}
     }
   },
   "order": [
@@ -103,6 +108,7 @@
     "women_colection_YGhGpJ",
     "women_wear_LG9G6A",
     "sort_by_4XiWd7",
-    "pagination_to_hHtyXw"
+    "pagination_to_hHtyXw",
+    "collection_cart_popup_bnQMaB"
   ]
 }
